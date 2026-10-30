@@ -1,7 +1,7 @@
 # Project Status — DF Sabiku Portfolio
 
 **Last updated:** 2026-10-30
-**Latest commits:** `ca269a5`, `cd3fd9f`, `0964305` — add English translations for activity and publication cards
+**Latest commits:** `ca269a5`, `cd3fd9f`, `0964305` — add English translations for activity and publication cards; deployment retry queued after rapid pushes cancelled earlier runs
 **Current work:** v0.2.7 — bilingual academic card content; profile cutout still under preparation  
 **Current version:** v0.2.4 (GitHub Pages deployment verified)  
 **Branch:** main  
