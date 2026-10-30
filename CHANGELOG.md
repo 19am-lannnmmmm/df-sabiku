@@ -1,3 +1,9 @@
+## [0.2.8] — 2026-10-30
+### Fixed
+- Documentation section introduction no longer says archive content will appear later while entries are already displayed.
+- Metadata sidecars can no longer override generated document ID, category, type, or URL fields.
+- Deployment verification pending.
+
 ## [0.2.7] — 2026-10-30
 ### Improved
 - Added English translations for activity titles, locations, roles, and summaries.
