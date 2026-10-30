@@ -1,5 +1,12 @@
 # Changelog — DF Sabiku Portfolio
 
+## [0.2.6] — 2026-10-30
+### Fixed
+- Documentation archive no longer shows an empty-state card when activity entries or uploaded documents are already available.
+- Empty-state guidance is now localized for Indonesian and English modes.
+
+
+
 ## [0.2.5] — 2026-10-30
 ### Fixed
 - Removed the empty `mailto:` action, which had no recipient and could not contact the profile owner.
