@@ -7,3 +7,7 @@
 .publication-card small{font-size:11px;line-height:1.6;color:var(--sage)}
 .publication-card a,.activity-grid .document-item a{display:inline-flex;align-items:center;gap:7px;color:var(--mint);font-size:12px;text-decoration:none;margin-top:auto;padding-top:5px}
 @media(max-width:700px){.activity-grid,.publication-grid{grid-template-columns:1fr}}
+
+/* Academic profile links replace the unavailable public email address. */
+.contact-links{display:flex;flex-wrap:wrap;gap:10px;max-width:390px;justify-content:flex-end}.contact-links .contact-link{margin:0}.contact-links .contact-link:hover{background:#ffffff0b;border-color:#8ac99c}
+@media(max-width:800px){.contact-links{justify-content:flex-start;margin-top:24px}.contact-links .contact-link{margin:0}}
