@@ -18,6 +18,7 @@ function walk(dir, category) {
     const meta = fs.existsSync(metaPath) ? JSON.parse(fs.readFileSync(metaPath, 'utf8')) : {}
     const relative = path.relative(path.resolve('public'), full).split(path.sep).join('/')
     records.push({
+      ...meta,
       id: relative,
       category,
       title: meta.title || path.basename(entry.name, ext).replace(/[-_]/g, ' '),
@@ -25,8 +26,7 @@ function walk(dir, category) {
       description: meta.description || '',
       language: meta.language || 'id',
       type: ext === '.pdf' ? 'document' : 'image',
-      url: '/df-sabiku/' + relative,
-      ...meta
+      url: '/df-sabiku/' + relative
     })
   }
 }
