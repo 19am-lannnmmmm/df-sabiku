@@ -1,3 +1,9 @@
+## 2026-10-30 — v0.2.8 — Documentation and index hardening
+- Updated documentation section intro text in Indonesian and English.
+- Moved metadata spread before generated canonical fields in `scripts/generate-content-index.mjs`, preventing sidecar values from replacing ID, category, type, or URL.
+- Commits: `ff1327a` (copy), `31ad571` (generator hardening).
+- Deployment verification pending.
+
 ## 2026-10-30 — v0.2.7 — Bilingual academic content
 - Added English-language fields to the activity and publication JSON records.
 - Updated React rendering so English mode localizes activity cards, publication categories/summaries, education program labels, and research-interest labels.
