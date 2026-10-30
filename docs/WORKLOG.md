@@ -1,4 +1,4 @@
-# Worklog
+## 2026-10-30 — v0.2.2 — GitHub Actions workflow compatibility\n- Inspected repository root and confirmed there is no package-lock.json.\n- Found `actions/setup-node` configured with `cache: npm`, which expects a dependency lockfile.\n- Removed npm cache configuration while retaining Node 22 and `npm install`.\n- Triggered a fresh GitHub Pages workflow run; build/deployment result is pending and must be checked before marking validation complete.\n\n# Worklog
 
 ## 2026-10-30 — v0.2.1 — Verified records and JSON content integration
 - Checked publisher landing pages for six records; each lists the exact full author name Dewi Fatmawaty Sabiku and Politeknik Negeri Jember affiliation.
