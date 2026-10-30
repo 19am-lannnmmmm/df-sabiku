@@ -1,5 +1,13 @@
 # Worklog — DF Sabiku Portfolio
 
+## 2026-10-30 — v0.2.6 — Documentation archive empty state
+- Live audit showed the archive's “Konten akan ditambahkan” placeholder remained visible even while three activity entries were displayed.
+- Updated `src/App.tsx` so the empty-state card appears only when there are no activities and no documents.
+- Localized the upload instruction for English mode.
+- Commit: `f7ad848`.
+
+
+
 ## 2026-10-30 — v0.2.5 — Contact link repair and profile media audit
 - Replaced the nonfunctional empty `mailto:` anchor with Google Scholar, SINTA, ORCID, and SIPORA links already present in `profile.json`.
 - Added responsive layout for the academic profile links.
