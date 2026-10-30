@@ -14,6 +14,11 @@ Dokumen ini adalah peta kerja utama. Status hanya diubah setelah pekerjaan benar
 | v0.8.0 | Content integration | Arsip PDF/gambar, galeri, CV, academic IDs, kontak final | Planned |
 | v1.0.0 | Release | QA desktop/mobile, aksesibilitas, performa, SEO, deployment stabil | Planned |
 
+## Progress v0.2.7
+- Added English display fields for activities and publication summaries/categories while preserving original scholarly titles, journal names, and author names.
+- Localized activity cards, publication metadata labels, education program names, and research-interest labels.
+- Deployment verification pending.
+
 ## Progress v0.2.6
 - Fixed misleading empty archive placeholder: it now appears only when both activity and document lists are empty.
 - Localized archive upload guidance for English mode.
