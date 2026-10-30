@@ -14,6 +14,11 @@ Dokumen ini adalah peta kerja utama. Status hanya diubah setelah pekerjaan benar
 | v0.8.0 | Content integration | Arsip PDF/gambar, galeri, CV, academic IDs, kontak final | Planned |
 | v1.0.0 | Release | QA desktop/mobile, aksesibilitas, performa, SEO, deployment stabil | Planned |
 
+## Progress v0.2.5 — contact and media audit
+- Removed the empty email link and surfaced existing academic profile links instead.
+- Confirmed cup and pink handbag are to be excluded from the portrait composition.
+- Automated cutout tests are not production-ready because staircase remnants remain; hero photo integration remains pending.
+
 ## Progress v0.2.4 — deployment verified
 - GitHub Actions run #52 (commit `7ca77c5`) completed successfully.
 - Initial GitHub Pages deployment pipeline is now green.
