@@ -2,7 +2,9 @@
 - Updated documentation section intro text in Indonesian and English.
 - Moved metadata spread before generated canonical fields in `scripts/generate-content-index.mjs`, preventing sidecar values from replacing ID, category, type, or URL.
 - Commits: `ff1327a` (copy), `31ad571` (generator hardening).
-- Deployment verification pending.
+- GitHub Actions run #82 (`41007919427`) completed with `success` on commit `84ba92c`.
+- Fresh live scrape confirmed the revised Indonesian and English documentation intro is present; three activity cards, six publication cards, and academic profile links remain visible.
+- Live URL: https://19am-lannnmmmm.github.io/df-sabiku/
 
 ## 2026-10-30 — v0.2.7 — Bilingual academic content
 - Added English-language fields to the activity and publication JSON records.

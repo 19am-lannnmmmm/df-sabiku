@@ -1,15 +1,15 @@
 # Project Status — DF Sabiku Portfolio
 
 **Last updated:** 2026-10-30
-**Latest commits:** `ff1327a`, `31ad571` — refine documentation copy and protect generated document-index fields; deployment retry queued after rapid pushes cancelled earlier runs
+**Latest commit:** `84ba92c` — v0.2.8 documentation and metadata hardening; GitHub Actions run #82 successful and live page verified
 **Current work:** v0.2.8 — documentation copy and document-index metadata hardening; profile cutout still under preparation  
-**Current version:** v0.2.4 (GitHub Pages deployment verified)  
+**Current version:** v0.2.8 (GitHub Pages deployment verified)  
 **Branch:** main  
 **Repository:** https://github.com/19am-lannnmmmm/df-sabiku  
 **Live site:** https://19am-lannnmmmm.github.io/df-sabiku/
 
 ## Posisi saat ini
-Fondasi React/Vite/TypeScript, tema botani bilingual, model konten JSON, dan workflow GitHub Pages sudah tersedia. GitHub Actions run **#52** (commit `7ca77c5`) berstatus **completed / success** pada 2026-10-30. Ini mengonfirmasi pipeline build dan deploy workflow berhasil. Website dapat ditinjau di URL Pages di atas.
+Fondasi React/Vite/TypeScript, tema botani bilingual, model konten JSON, dan workflow GitHub Pages sudah tersedia. GitHub Actions run **#82** (commit `84ba92c`) berstatus **completed / success** pada 2026-10-30. Live scrape mengonfirmasi intro dokumentasi v0.2.8 tampil, bersama tiga kegiatan, enam publikasi, dan tautan akademik.
 
 ## Pekerjaan selesai
 - [x] Replaced misleading documentation intro copy when archive entries are present.
@@ -37,8 +37,8 @@ Belum ada panel admin/CMS. Perubahan data dilakukan dengan mengedit JSON dan com
 
 ## Masih terbuka
 - [ ] Audit link dan metadata dokumen setelah penambahan file nyata.
-- [ ] Verify v0.2.8 deployment and manually test Indonesian/English toggle across all cards.
-- [ ] Test document-index generator with metadata containing conflicting reserved keys.
+- [x] Verify v0.2.8 deployment; live page displays updated documentation intro, three activities, six publications, and academic links. Manual browser interaction test for the language toggle remains open.
+- [ ] Run a fixture-based test of document-index generation with metadata containing conflicting reserved keys.
 - [ ] Konfirmasi pemilik atas ORCID, jabatan fungsional, pendidikan, serta isi biodata.
 - [ ] Konfirmasi foto publik dan arahan penghapusan gelas/tas.
 - [ ] Tambahkan pengalaman mengajar, mata kuliah, hibah, pembimbingan, penghargaan jika ada bukti.
@@ -51,8 +51,9 @@ Belum ada panel admin/CMS. Perubahan data dilakukan dengan mengedit JSON dan com
 - Perbaikan tervalidasi oleh run #52 yang completed dengan conclusion success.
 
 ## Deployment
-- Workflow: [GitHub Actions run #52](https://github.com/19am-lannnmmmm/df-sabiku/actions/runs/41003026478)
+- Workflow: [GitHub Actions run #82](https://github.com/19am-lannnmmmm/df-sabiku/actions/runs/41007919427)
 - Status run: completed / success.
+- Live page checked with a fresh scrape; updated v0.2.8 documentation copy is present.
 - Live URL: https://19am-lannnmmmm.github.io/df-sabiku/
 
 ## Temuan akademik (snapshot 2026-10-30)

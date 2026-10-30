@@ -2,7 +2,7 @@
 ### Fixed
 - Documentation section introduction no longer says archive content will appear later while entries are already displayed.
 - Metadata sidecars can no longer override generated document ID, category, type, or URL fields.
-- Deployment verification pending.
+- GitHub Actions run #82 completed successfully; live page scrape confirms the updated copy is deployed.
 
 ## [0.2.7] — 2026-10-30
 ### Improved

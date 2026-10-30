@@ -1,7 +1,7 @@
 ## Progress v0.2.8
 - Updated documentation section copy so it describes the existing activity archive instead of implying content is still forthcoming.
 - Hardened document-index generation: sidecar metadata is applied first, then canonical ID, category, type, and URL fields are assigned by the generator and cannot be overwritten.
-- Deployment verification pending.
+- GitHub Actions run #82 succeeded; live page verified with fresh scrape.
 
 # Roadmap — DF Sabiku
 
