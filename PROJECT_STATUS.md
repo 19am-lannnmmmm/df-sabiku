@@ -1,6 +1,7 @@
 # Project Status — DF Sabiku Portfolio
 
 **Last updated:** 2026-10-30
+**Latest commit:** `f7ad848` — hide empty archive placeholder when activity/document content exists
 **Current work:** v0.2.5 — contact links repaired; profile cutout still under preparation  
 **Current version:** v0.2.4 (GitHub Pages deployment verified)  
 **Branch:** main  
