@@ -1,25 +1,36 @@
-## 2026-10-30 — v0.2.3 — TypeScript Vite environment declaration\n- Rechecked all recent GitHub Actions runs: runs #46 and #47 failed; earlier runs #35, #32, #28, #26 and #22 also failed, while many intervening runs were cancelled by the concurrency policy.\n- Retrieved run #47 job log. `npm install` succeeded (72 packages, 0 vulnerabilities), but `tsc -b` failed at `src/App.tsx(21,30)` with `TS2339: Property 'env' does not exist on type 'ImportMeta'`.\n- Confirmed `src/vite-env.d.ts` was absent. Added it with `/// <reference types=\"vite/client\" />`.\n- Run #47 uploaded no Pages artifact; deploy job was skipped. New commit must be validated before claiming deployment success.\n\n## 2026-10-30 — v0.2.2 — GitHub Actions workflow compatibility\n- Inspected repository root and confirmed there is no package-lock.json.\n- Found `actions/setup-node` configured with `cache: npm`, which expects a dependency lockfile.\n- Removed npm cache configuration while retaining Node 22 and `npm install`.\n- Triggered a fresh GitHub Pages workflow run; build/deployment result is pending and must be checked before marking validation complete.\n\n# Worklog
+# Worklog — DF Sabiku Portfolio
+
+## 2026-10-30 — v0.2.4 — GitHub Pages deployment verified
+- Rechecked GitHub Actions run #52: run ID `41003026478`, head commit `7ca77c576d4dc07331f29115937082a52435a264`.
+- Workflow status is `completed` and conclusion is `success`.
+- This validates the workflow after the Vite type declaration fix; the initial Pages deployment pipeline is now green.
+- Live deployment URL: https://19am-lannnmmmm.github.io/df-sabiku/
+- Updated project status, changelog, and roadmap to reflect the verified result.
+- Next: audit the deployed UI and validate the folder/metadata document publishing workflow.
+
+## 2026-10-30 — v0.2.3 — TypeScript Vite environment declaration
+- Run #47 showed `npm install` succeeded (72 packages, 0 vulnerabilities), but `tsc -b` failed at `src/App.tsx(21,30)` with `TS2339: Property 'env' does not exist on type 'ImportMeta'`.
+- Confirmed `src/vite-env.d.ts` was absent. Added it with `/// <reference types="vite/client" />`.
+- Run #47 uploaded no Pages artifact and the deploy job was skipped. The fix was subsequently validated by successful run #52.
+
+## 2026-10-30 — v0.2.2 — GitHub Actions workflow compatibility
+- Confirmed there was no `package-lock.json` while `setup-node` was configured with `cache: npm`.
+- Removed npm cache configuration while retaining Node 22 and `npm install`.
 
 ## 2026-10-30 — v0.2.1 — Verified records and JSON content integration
 - Checked publisher landing pages for six records; each lists the exact full author name Dewi Fatmawaty Sabiku and Politeknik Negeri Jember affiliation.
 - Verified ORCID 0009-0009-9278-1855: public name abbreviated as Dewi F Sabiku, employment at Politeknik Negeri Jember, verified email domain polije.ac.id; same ORCID is linked from publisher author record on the sugarcane-seed paper.
-- Added public/data/publications.json (six entries) and public/data/activities.json (three official Polije activities).
-- Updated src/App.tsx to fetch/render publication and activity records from JSON.
-- Added responsive CSS for those cards.
-- Added academic profile URLs to src/data/profile.json.
-- Updated research evidence, content draft, status and changelog.
-- Routine content changes can now be done by editing the JSON files; no admin panel/CMS is implemented.
-- Build/deployment remains untested.
+- Added `public/data/publications.json` (six entries) and `public/data/activities.json` (three official Polije activities).
+- Updated `src/App.tsx` to fetch/render publication and activity records from JSON.
+- Added responsive CSS for those cards and academic profile URLs to `src/data/profile.json`.
+- Routine content updates are JSON-based; no admin/CMS panel is implemented.
 
 ## 2026-10-30 — v0.2.0 — Research discovery
-- Firecrawl search/scrape used for Google Scholar, SINTA, SIPORA, journal publishers, ORCID and official Polije pages.
-- Identified matching Scholar and SINTA profiles and three official institutional news items.
-- Recorded source URLs, confidence and index-coverage discrepancies.
-- Build/deployment still unverified.
+- Identified Google Scholar and SINTA profiles and three official Polije activity sources.
+- Recorded source URLs, confidence and index-coverage discrepancies in the research evidence log.
 
 ## 2026-10-30 — v0.1.0 — Foundation scaffold
 - React/Vite/TypeScript foundation and initial portfolio layout.
 - Bilingual UI and initial profile content model.
 - Document folders and metadata-index generation.
 - GitHub Pages workflow and project documentation.
-- Build/deployment validation pending.
