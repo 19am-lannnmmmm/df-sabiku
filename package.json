@@ -7,7 +7,8 @@
     "dev": "vite",
     "prebuild": "node scripts/generate-content-index.mjs",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:content": "node scripts/test-document-index.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",

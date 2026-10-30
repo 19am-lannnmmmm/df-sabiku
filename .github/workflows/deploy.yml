@@ -22,6 +22,8 @@ jobs:
           node-version: 22
       - name: Install dependencies
         run: npm install
+      - name: Test document index generator
+        run: npm run test:content
       - name: Build
         run: npm run build
       - name: Upload artifact
