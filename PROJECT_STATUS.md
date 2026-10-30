@@ -1,13 +1,13 @@
 # Project Status — DF Sabiku Portfolio
 
 **Last updated:** 2026-10-30  
-**Current version:** v0.2.3 (TypeScript Vite environment fix)  
+**Current version:** v0.2.4 (GitHub Pages deployment verified)  
 **Branch:** main  
 **Repository:** https://github.com/19am-lannnmmmm/df-sabiku  
-**Deployment target:** https://19am-lannnmmmm.github.io/df-sabiku/
+**Live site:** https://19am-lannnmmmm.github.io/df-sabiku/
 
 ## Posisi saat ini
-Fondasi React/Vite/TypeScript sudah ada. Data publikasi dan kegiatan yang diverifikasi kini dipisahkan ke file JSON dan dibaca oleh website. Nama profil utama di src/data/profile.json tetap **Dewi Fatmawaty Sabiku**. Build sebelumnya gagal pada TypeScript; deklarasi tipe Vite telah ditambahkan dan run baru perlu diverifikasi.
+Fondasi React/Vite/TypeScript, tema botani bilingual, model konten JSON, dan workflow GitHub Pages sudah tersedia. GitHub Actions run **#52** (commit `7ca77c5`) berstatus **completed / success** pada 2026-10-30. Ini mengonfirmasi pipeline build dan deploy workflow berhasil. Website dapat ditinjau di URL Pages di atas.
 
 ## Pekerjaan selesai
 - [x] Scaffold React + Vite + TypeScript, tema botani, bilingual.
@@ -18,32 +18,42 @@ Fondasi React/Vite/TypeScript sudah ada. Data publikasi dan kegiatan yang diveri
 - [x] Tiga kegiatan/berita resmi Polije dicatat dengan peran hati-hati sebagai anggota tim.
 - [x] Data publikasi dan kegiatan disimpan terpisah dalam JSON dan dirender otomatis.
 - [x] Kartu publikasi/kegiatan diberi styling responsif.
+- [x] GitHub Actions build dan GitHub Pages deployment berhasil pada run #52.
 - [x] Evidence log, content draft, changelog, roadmap, worklog diperbarui.
 
 ## Struktur konten yang mudah dirawat
-- src/data/profile.json — identitas, pendidikan, minat, tautan akademik.
-- public/data/publications.json — daftar publikasi; tambah/hapus/edit objek data.
-- public/data/activities.json — daftar kegiatan; tambah/hapus/edit objek data.
-- public/documents/{research,publications,community,teaching,other}/ — unggah file; metadata berdampingan memakai .meta.json; indeks dibuat oleh script.
+- `src/data/profile.json` — identitas, pendidikan, minat, tautan akademik.
+- `public/data/publications.json` — daftar publikasi; tambah/hapus/edit objek data.
+- `public/data/activities.json` — daftar kegiatan; tambah/hapus/edit objek data.
+- `public/documents/{research,publications,community,teaching,other}/` — unggah file; metadata berdampingan memakai `.meta.json`; indeks dibuat oleh script.
 
-Tidak ada panel admin/CMS saat ini. Perubahan data dilakukan dengan mengedit JSON dan commit ke GitHub; tidak perlu mengubah komponen UI untuk operasi tambah/hapus biasa.
+Belum ada panel admin/CMS. Perubahan data dilakukan dengan mengedit JSON dan commit ke GitHub; dokumen ditambahkan ke folder sesuai kategori dengan metadata pendamping.
 
 ## Masih terbuka
-- [ ] Build test dan perbaikan TypeScript/CSS bila ditemukan (workflow baru dipicu; hasil belum tersedia).
-- [ ] Verifikasi deployment GitHub Pages.
-- [ ] Audit link dan metadata dokumen.
+- [ ] Audit link dan metadata dokumen setelah penambahan file nyata.
 - [ ] Konfirmasi pemilik atas ORCID, jabatan fungsional, pendidikan, serta isi biodata.
 - [ ] Konfirmasi foto publik dan arahan penghapusan gelas/tas.
 - [ ] Tambahkan pengalaman mengajar, mata kuliah, hibah, pembimbingan, penghargaan jika ada bukti.
-- [ ] Implementasi animasi dan WebGL sesuai roadmap.
+- [ ] Implementasi animasi scroll dan WebGL sesuai roadmap.
+- [ ] QA visual di desktop/mobile dan pemeriksaan aksesibilitas/performa.
 
-## Perbaikan teknis v0.2.3\n- GitHub Actions #47 mengungkap error `TS2339: Property 'env' does not exist on type 'ImportMeta'` di `src/App.tsx`; file `src/vite-env.d.ts` sebelumnya tidak ada.\n- Menambahkan `/// <reference types=\"vite/client\" />` agar `import.meta.env.BASE_URL` dikenali TypeScript.\n- Menunggu hasil run baru untuk memastikan build lolos.\n\n## Perbaikan teknis v0.2.2\n- Menghapus konfigurasi `cache: npm` dari `setup-node` karena repository belum memiliki lockfile; workflow tetap menjalankan `npm install`.\n- Push terbaru memicu workflow baru; status build/deploy belum boleh dianggap berhasil sampai run selesai.\n- `public/data/document-index.json` saat ini valid sebagai array kosong `[]` karena belum ada dokumen yang diunggah.\n\n## Temuan akademik (snapshot 2026-10-30)
+## Perbaikan teknis v0.2.3
+- Run #47 mengungkap error `TS2339: Property 'env' does not exist on type 'ImportMeta'` di `src/App.tsx`.
+- Menambahkan `src/vite-env.d.ts` dengan referensi `vite/client`.
+- Perbaikan tervalidasi oleh run #52 yang completed dengan conclusion success.
+
+## Deployment
+- Workflow: [GitHub Actions run #52](https://github.com/19am-lannnmmmm/df-sabiku/actions/runs/41003026478)
+- Status run: completed / success.
+- Live URL: https://19am-lannnmmmm.github.io/df-sabiku/
+
+## Temuan akademik (snapshot 2026-10-30)
 - Google Scholar: 8 artikel, 3 sitasi, h-index 1, i10-index 0 (snapshot saat akses).
 - SINTA ID 6935628: Score Overall 46; Score 3Yr 45.
 - Enam artikel memiliki dukungan metadata publisher/DOI yang menyebut nama lengkap dan afiliasi yang sama.
 - SIPORA author browse menampilkan satu item sementara Google Scholar menampilkan delapan rekam; perbedaan cakupan indeks tidak disamakan menjadi total publikasi.
 
-Rincian sumber dan batas verifikasi: docs/RESEARCH_SOURCES.md. Draft konten: docs/PORTFOLIO_CONTENT_DRAFT.md.
+Rincian sumber dan batas verifikasi: `docs/RESEARCH_SOURCES.md`. Draft konten: `docs/PORTFOLIO_CONTENT_DRAFT.md`.
 
 ## Aturan kelanjutan
-Setiap sesi wajib memperbarui status, changelog, worklog, dan issue relevan. Jangan klaim build/deployment berhasil sebelum pipeline benar-benar diuji.
+Setiap sesi wajib memperbarui status, changelog, worklog, dan issue relevan. Jangan klaim build/deployment berhasil tanpa hasil pipeline yang sukses.
