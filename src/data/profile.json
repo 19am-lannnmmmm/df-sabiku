@@ -1,0 +1,17 @@
+{
+  "name": "Dewi Fatmawaty Sabiku",
+  "degree": "S.P., M.Si.",
+  "role": { "id": "Dosen / Peneliti", "en": "Lecturer / Researcher" },
+  "position": { "id": "Asisten Ahli", "en": "Assistant Expert" },
+  "institution": "Politeknik Negeri Jember",
+  "program": { "id": "Program Studi Teknik Produksi Benih", "en": "Seed Production Engineering Study Program" },
+  "tagline": {
+    "id": "Mengeksplorasi ilmu dan teknologi benih untuk mendukung produktivitas pertanian berkelanjutan.",
+    "en": "Exploring seed science and technology to support sustainable agricultural productivity."
+  },
+  "education": [
+    { "level": "S2", "institution": "Institut Pertanian Bogor", "program": "Magister Sains (Ilmu dan Teknologi Benih)", "year": "2019" },
+    { "level": "S1", "institution": "Universitas Negeri Gorontalo", "program": "Sarjana Pertanian (Agroteknologi)", "year": "2015" }
+  ],
+  "researchInterests": ["Teknologi Benih", "Produksi Benih", "Biopriming", "Hidroponik", "Pertanian Organik"]
+}
