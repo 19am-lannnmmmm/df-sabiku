@@ -1,3 +1,10 @@
+## [0.2.7] — 2026-10-30
+### Improved
+- Added English translations for activity titles, locations, roles, and summaries.
+- Added English publication categories and summaries; original publication titles, journal names, and author names remain in their published form.
+- Localized education program labels, research-interest labels, and publication page notation in English mode.
+- Deployment verification pending.
+
 # Changelog — DF Sabiku Portfolio
 
 ## [0.2.6] — 2026-10-30
