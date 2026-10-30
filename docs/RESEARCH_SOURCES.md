@@ -12,7 +12,7 @@
 | Study program | D4 Teknik Produksi Benih | [SINTA author profile](https://sinta.kemdiktisaintek.go.id/authors/profile/6935628) | High; explicitly listed on SINTA |
 | Google Scholar | Author profile ID `16NBQ3MAAAAJ`; verified email domain `polije.ac.id` | [Google Scholar](https://scholar.google.com/citations?user=16NBQ3MAAAAJ&hl=en) | High identity match |
 | SINTA | Author ID `6935628` | [SINTA](https://sinta.kemdiktisaintek.go.id/authors/profile/6935628) | High identity match |
-| ORCID | No matching personal ORCID profile confirmed in this research pass | Search for exact name; result was inconclusive | Do not publish an ORCID badge/link until confirmed |
+| ORCID | ORCID iD `0009-0009-9278-1855`; public record displays **Dewi F Sabiku**, verified email domain `polije.ac.id`, and employment at Politeknik Negeri Jember | [ORCID record](https://orcid.org/0009-0009-9278-1855); same ORCID is linked from the publisher page for the sugarcane-seed article | Strong match: same surname/initials, institutional employment, verified institutional email domain, and ORCID embedded in a publisher author record. Public display is abbreviated, so retain exact full name as used by publisher records and owner brief |
 | Functional position | Asisten Ahli | Project brief supplied by owner | Owner-provided; not independently verified online in this pass |
 | Education | IPB S2 (2019), Universitas Negeri Gorontalo S1 (2015) | Project brief supplied by owner | Owner-provided; confirm against CV/diploma before public launch |
 
@@ -28,7 +28,7 @@ Sources: [Google Scholar profile](https://scholar.google.com/citations?user=16NB
 
 ## Publications and scholarly records
 
-### Records with direct publisher/repository evidence
+### Records with direct publisher evidence (author and metadata checked on publisher pages)
 
 1. **Sosialisasi Budidaya Tanaman Hidroponik untuk Meningkatkan Kemandirian Pangan di Komunitas Perumahan Subsidi** (2025). Authors include Nur Aini Alfiah, **Dewi Fatmawaty Sabiku**, Devina Cinantya Anindita, Dewi Puspa Arisandi, Anggita Rizky Fadilah, Ni Nengah Putri Adnyani, and Ferril Muhammad Nur. *Jurnal Abdi Insani*, 12(5), 1844–1852. DOI: [10.29303/abdiinsani.v12i5.2404](https://doi.org/10.29303/abdiinsani.v12i5.2404). Published 2025-05-24. Publisher page: https://abdiinsani.unram.ac.id/index.php/jurnal/article/view/2404.  
    Evidence: publisher metadata explicitly lists the author and Politeknik Negeri Jember affiliations. The article describes practical hydroponic bok choy training for residents of a subsidized housing community in Jember.
@@ -36,14 +36,14 @@ Sources: [Google Scholar profile](https://scholar.google.com/citations?user=16NB
 2. **Efisiensi Usahatani Bibit Tebu Bagal dan Strategi Pengembangan Sistem Pembibitan di Kecamatan Balung Jember** (2025). Authors: Nur Aini Alfiah, Dewi Puspa Arisandi, **Dewi Fatmawaty Sabiku**. *Jurnal Ilmiah Membangun Desa dan Pertanian (JIMDP)*, 10(3), 333–342. DOI: [10.37149/jimdp.v10i3.2123](https://doi.org/10.37149/jimdp.v10i3.2123). Repository record: https://sipora.polije.ac.id/46825/.  
    Evidence: Polije's SIPORA record lists the author, journal, year, volume, pages, DOI, and peer-reviewed article type. The repository abstract describes farm-business efficiency and development strategies for farmer-managed sugarcane seed production in Balung, Jember.
 
-3. **Effect of Seed Biopriming with Trichoderma harzianum for Increasing Seed Quality of Vegetable Soybean (Edamame)** (2026). Google Scholar lists Dewi Fatmawaty Sabiku among the authors; *Futures in Agro-Food Economics and Logistics Analytics Journal (FAFELA)*, 2(2), 2026. DOI: [10.67580/fafela.v2i2.26](https://doi.org/10.67580/fafela.v2i2.26). Publisher issue page: https://fafela.literapublishing.id/index.php/jfafela/issue/current.  
-   Evidence: Google Scholar profile and publisher search result agree on the title and journal/issue; verify the final author order and article page metadata before using a full citation.
+3. **Effect of Seed Biopriming with Trichoderma harzianum for Increasing Seed Quality of Vegetable Soybean (Edamame)** (2026). Authors: Maria Azizah, Nur Aini Alfiah, **Dewi Fatmawaty Sabiku**, Anggita Rizky Fadilah, and Estin Roso Pristiwaningsih. *Futures in Agro-Food Economics and Logistics Analytics Journal*, 2(2), 46–53. DOI: [10.67580/fafela.v2i2.26](https://doi.org/10.67580/fafela.v2i2.26). Published 2026-01-08; issue Vol. 2 No. 2 (June 2026).  
+   Evidence: publisher landing page explicitly lists full author names, Politeknik Negeri Jember affiliations, pages, issue and DOI.
 
-4. **Edukasi Pemanfaatan Biopestisida dari Umbi Bawang Putih sebagai Alternatif Pengendalian OPT Ramah Lingkungan di Grand Puri Bunga Nirwana, Jember** (2025). Google Scholar lists Dewi Fatmawaty Sabiku in the author string. *JATIMAS: Jurnal Pertanian dan Pengabdian Masyarakat*, 5(1), 1–9. DOI: [10.30737/jatimas.v5i1.6461](https://doi.org/10.30737/jatimas.v5i1.6461). Publisher/PDF: https://ojs.unik-kediri.ac.id/index.php/jatimas/article/view/6461.  
-   Evidence: Google Scholar profile and DOI-bearing publisher/PDF search result; final author list should be checked against the publisher landing page/PDF before publishing.
+4. **Edukasi Pemanfaatan Biopestisida dari Umbi Bawang Putih sebagai Alternatif Pengendalian OPT Ramah Lingkungan di Grand Puri Bunga Nirwana, Jember** (2025). Authors include **Dewi Fatmawaty Sabiku**. *JATIMAS: Jurnal Pertanian dan Pengabdian Masyarakat*, 5(1), 1–9. DOI: [10.30737/jatimas.v5i1.6461](https://doi.org/10.30737/jatimas.v5i1.6461). Published 2025-07-29.  
+   Evidence: publisher page explicitly lists full author name, Politeknik Negeri Jember affiliation, biography, volume/issue/pages and DOI.
 
-5. **Inovasi Pengembangan Produk Olahan Mawar Melalui Pembuatan Teh Kuncup Mawar di KWT Nawasena, Desa Karangpring Kecamatan Sukorambi, Kabupaten Jember** (2025). Search results identify Dewi Fatmawaty Sabiku as an author and Politeknik Negeri Jember affiliation. DOI: [10.47134/comdev.v5i3.1440](https://doi.org/10.47134/comdev.v5i3.1440). Publisher page: https://comdev.pubmedia.id/index.php/comdev/article/view/1440.  
-   Evidence: publisher search result and Semantic Scholar metadata; verify the full issue/pages and author order on the publisher page before publication.
+5. **Inovasi Pengembangan Produk Olahan Mawar Melalui Pembuatan Teh Kuncup Mawar di KWT Nawasena, Desa Karangpring Kecamatan Sukorambi, Kabupaten Jember** (2025). Authors: Maria Azizah, Mochamat Bintoro, Leli Kurniasari, and **Dewi Fatmawaty Sabiku**. *Journal of Community Development*, 5(3), 808–813. DOI: [10.47134/comdev.v5i3.1440](https://doi.org/10.47134/comdev.v5i3.1440). Published 2025-01-13.  
+   Evidence: publisher page explicitly lists full author names, Politeknik Negeri Jember affiliations, page range and DOI.
 
 6. **Matriconditioning Plus Berbasis Trichoderma harzianum dan Berbagai Jenis Matriks untuk Revitalisasi Benih Kedelai (Glycine max L. Merr.) K edaluwarsa** (2026). Search results identify Dewi Fatmawaty Sabiku, Politeknik Negeri Jember, among the listed authors. *JIRK*, Vol. 6 No. 2 (July 2026). Publisher page: https://bajangjournal.com/index.php/JIRK/article/view/12992.  
    Evidence: publisher search result. Exact DOI, final author order, page range, and article publication metadata need confirmation before use.
@@ -65,7 +65,7 @@ Sources: [Google Scholar profile](https://scholar.google.com/citations?user=16NB
 
 - SIPORA's author browse page currently returns **one** repository item for the exact creator name, while Google Scholar displays **eight** profile article records. These are different indexes with different coverage; do not treat either count as a complete universal publication total.
 - The Google Scholar profile page returned a temporary loading message alongside its profile data during scraping. The metrics and list above are the data visible in that captured page.
-- No personal ORCID profile has been confirmed. Do not invent an ORCID URL.
+- ORCID has now been identified as `0009-0009-9278-1855`. The public ORCID display name is abbreviated (`Dewi F Sabiku`), but the record shows Politeknik Negeri Jember employment and verified `polije.ac.id` email domain; the same iD is linked on the sugarcane article author record. This is a strong identity match, though the owner should still confirm before public launch.
 - No independently verified official lecturer profile/CV page or functional-rank page was identified in this pass.
 - Teaching portfolio, course list, student supervision, grants, and detailed research project records have not yet been verified.
 - A conference schedule result mentioned an Edamame seed-biopriming presentation, but it did not list Dewi Fatmawaty Sabiku as an author in the retrieved row; do not attribute that presentation based on the schedule excerpt alone.
