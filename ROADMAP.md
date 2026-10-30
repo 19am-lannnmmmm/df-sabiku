@@ -15,7 +15,7 @@
 ## Progress v0.2.9
 - Menambahkan panduan upload pada `public/documents/README.md` dan template metadata.
 - Run #84 membuktikan fixture test generator sukses; commit dokumentasi ini masih menunggu CI.
-- Uji dokumen nyata dan tampilan live tetap menjadi pekerjaan berikutnya.
+- Uji PDF dan foto kegiatan nyata dicatat sebagai pekerjaan tertunda atas arahan pengguna; lanjutkan setelah tahap pengembangan lain.
 
 ## Prioritas berikutnya
 1. Verifikasi CI dan live Pages setelah commit panduan.

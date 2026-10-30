@@ -1,6 +1,6 @@
 # Worklog — DF Sabiku Portfolio
 
-## 2026-10-30 — v0.2.9 — Panduan unggah dokumen
+## 2026-10-30 — v0.2.10 — Accessibility polish\n- Added a skip link to main content, localized navigation labels, menu `aria-expanded`/`aria-controls`, and a localized accessible label for the hero illustration.\n- Added keyboard-visible focus styles and declared CSS variables `--text` and `--sage` referenced by publication card styles.\n- User requested that PDF and activity-photo upload testing be noted and deferred while other development continues.\n- CI for this commit must be checked before deployment claims.\n\n## 2026-10-30 — v0.2.9 — Panduan unggah dokumen
 - Memeriksa folder arsip; kelima kategori saat ini hanya berisi `.gitkeep`, belum ada dokumen nyata.
 - Menambahkan `public/documents/README.md` berisi kategori, format file, metadata sidecar, pengingat privasi/hak publikasi, dan langkah commit.
 - Menambahkan `docs/templates/document.meta.json.example`.

@@ -25,3 +25,11 @@
 
 ## Foundation v0.1.0–v0.2.4
 - Scaffold React/Vite/TypeScript, bilingual UI, data JSON, metadata generator, dan workflow GitHub Pages; run #52 sukses.
+
+## [0.2.10] — 2026-10-30
+### Improved
+- Added skip-to-content navigation, accessible menu state/labels, and localized hero illustration labels.
+- Added visible keyboard focus styling and defined the text/sage CSS tokens used by publication cards.
+- PDF and activity-photo upload verification explicitly deferred at the user's request.
+### Tested
+- Awaiting GitHub Actions for this commit.

@@ -28,7 +28,7 @@ Belum ada panel admin/CMS. Data diperbarui melalui GitHub; indeks dokumen dibuat
 
 ## Masih terbuka
 - [ ] Verifikasi CI dan live deployment untuk commit panduan v0.2.9.
-- [ ] Uji satu dokumen nyata yang disetujui: metadata, URL, dan kartu website.
+- [ ] Uji satu dokumen nyata yang disetujui: metadata, URL, dan kartu website (**ditunda atas arahan pengguna; lanjut setelah tahap pengembangan lain selesai**).
 - [ ] Konfirmasi biodata, jabatan fungsional, pendidikan, dan tautan ORCID kepada pemilik.
 - [ ] Finalisasi foto asli tanpa mengubah wajah/piksel identitas; gelas dan tas dikecualikan.
 - [ ] Lengkapi pengalaman mengajar, hibah, pembimbingan, dan penghargaan jika ada bukti.
