@@ -26,13 +26,14 @@ function App() {
   const t = copy[lang]
   const links = ['about', 'research', 'documentation', 'publications', 'contact']
   return <div className="site-shell">
+    <a className="skip-link" href="#main-content">{t.skip}</a>
     <div className="ambient ambient-one" /><div className="ambient ambient-two" />
     <header className="topbar">
       <a className="brand" href="#home"><span className="brand-mark"><Sprout size={19}/></span><span>DF<span className="brand-dot">.</span></span></a>
       <nav id="primary-navigation" aria-label={lang === 'id' ? 'Navigasi utama' : 'Main navigation'} className={menuOpen ? 'nav nav-open' : 'nav'}>{t.nav.map((label, i) => <a key={links[i]} href={'#'+links[i]} onClick={() => setMenuOpen(false)}>{label}</a>)}</nav>
       <div className="header-actions"><button className="lang-button" onClick={() => setLang(lang === 'id' ? 'en' : 'id')} aria-label={t.switchTo}><Languages size={16}/>{lang === 'id' ? 'EN' : 'ID'}</button><button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? t.closeMenu : t.menu} aria-expanded={menuOpen} aria-controls="primary-navigation">{menuOpen ? <X/> : <Menu/>}</button></div>
     </header>
-    <main>
+    <main id="main-content" tabIndex={-1}>
       <section className="hero" id="home">
         <div className="hero-copy"><div className="eyebrow"><span className="eyebrow-line"/>{t.eyebrow}</div><h1>{t.intro}<br/><em>{t.accent}</em></h1>
           <p className="hero-name">{profile.name}, {profile.degree}</p><p className="hero-role">{profile.role[lang]} · {profile.position[lang]}</p><p className="hero-affiliation">{profile.institution}<br/>{profile.program[lang]}</p>
