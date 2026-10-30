@@ -1,4 +1,4 @@
-# Changelog — DF Sabiku Portfolio
+# Changelog — DF Sabiku\n\n## [0.2.2] — 2026-10-30\nStatus: **Workflow compatibility fix; awaiting GitHub Actions result**\n\n### Fixed\n- Removed `setup-node` npm cache configuration because the repository has no lockfile yet; dependency installation continues with `npm install`.\n- Triggered a fresh Pages workflow run. Build and deployment are not yet confirmed.\n Portfolio
 
 ## [0.2.1] — 2026-10-30
 Status: **Data-driven content integration; build/deployment not yet verified**
