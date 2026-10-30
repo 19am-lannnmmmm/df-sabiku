@@ -25,7 +25,7 @@ function walk(dir, category) {
       description: meta.description || '',
       language: meta.language || 'id',
       type: ext === '.pdf' ? 'document' : 'image',
-      url: '/' + relative,
+      url: '/df-sabiku/' + relative,
       ...meta
     })
   }
