@@ -14,7 +14,7 @@ Dokumen ini adalah peta kerja utama. Status hanya diubah setelah pekerjaan benar
 | v0.8.0 | Content integration | Arsip PDF/gambar, galeri, CV, academic IDs, kontak final | Planned |
 | v1.0.0 | Release | QA desktop/mobile, aksesibilitas, performa, SEO, deployment stabil | Planned |
 
-## Progress v0.2.1
+## Progress v0.2.2\n- Menghapus `cache: npm` dari GitHub Actions karena belum tersedia `package-lock.json`; workflow baru dipicu ulang.\n- Menunggu hasil build dan deployment sebelum checklist verifikasi ditutup.\n\n## Progress v0.2.1
 - Data publikasi berada di `public/data/publications.json`.
 - Data kegiatan berada di `public/data/activities.json`.
 - Profil akademik berada di `src/data/profile.json`.
@@ -25,7 +25,7 @@ Dokumen ini adalah peta kerja utama. Status hanya diubah setelah pekerjaan benar
 1. Audit metadata publikasi dari halaman penerbit/DOI dan lengkapi bukti.
 2. Konfirmasi data pendidikan, jabatan fungsional, serta identitas/izin foto.
 3. Integrasikan hanya konten yang telah tervalidasi ke JSON website.
-4. Jalankan `npm install` dan `npm run build`; perbaiki workflow GitHub Pages.
+4. Periksa hasil run GitHub Actions setelah perbaikan cache; perbaiki error build jika muncul.
 5. Uji deployment dan tautan dokumen.
 
 ## Aturan perubahan versi
