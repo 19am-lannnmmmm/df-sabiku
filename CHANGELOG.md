@@ -1,5 +1,15 @@
 # Changelog — DF Sabiku Portfolio
 
+## [0.2.5] — 2026-10-30
+### Fixed
+- Removed the empty `mailto:` action, which had no recipient and could not contact the profile owner.
+- Replaced it with the existing Google Scholar, SINTA, ORCID, and SIPORA profile links; added responsive link layout.
+### Media status
+- User confirmed the cup and pink handbag should be excluded from the hero portrait composition.
+- Automated GrabCut experiments still leave staircase fragments and damage edge details; no draft cutout has been committed or deployed. Preserve the original face and pixels; obtain a cleaner segmentation before integration.
+
+
+
 ## [0.2.4] — 2026-10-30
 Status: **GitHub Actions and GitHub Pages deployment successful**
 
