@@ -16,3 +16,23 @@
 /* Keyboard accessibility and visible focus states */
 .skip-link{position:absolute;left:16px;top:12px;z-index:20;padding:11px 15px;border-radius:8px;background:#e5f7e9;color:#0a1f13;font-size:13px;font-weight:700;transform:translateY(-160%);transition:transform .2s}.skip-link:focus{transform:translateY(0)}
 a:focus-visible,button:focus-visible{outline:3px solid #a8e6cf;outline-offset:4px;border-radius:6px}#main-content:focus{outline:none}
+
+
+/* Tablet navigation and narrow-screen content resilience */
+@media(max-width:800px){
+  .menu-button{display:flex}
+  .nav{display:none;position:absolute;top:81px;left:0;right:0;padding:20px 25px;background:#0e281a;border-bottom:1px solid var(--line);flex-direction:column;gap:20px}
+  .nav-open{display:flex}
+  .nav a{font-size:13px}
+}
+@media(max-width:600px){
+  .nav{top:69px}
+}
+.publication-card,.activity-grid .document-item,.document-item{min-width:0;overflow-wrap:anywhere}
+.publication-card h3,.activity-grid .document-item strong{overflow-wrap:anywhere}
+#main-content{scroll-margin-top:90px}
+@media(max-width:600px){
+  #main-content{scroll-margin-top:76px}
+  .hero-art{max-width:100%;overflow:visible}
+  .contact-links{max-width:100%}
+}
