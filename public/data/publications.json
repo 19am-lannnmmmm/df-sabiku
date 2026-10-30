@@ -19,7 +19,9 @@
       "Ferril Muhammad Nur"
     ],
     "summary": "Pelatihan dan praktik budidaya pakcoy secara hidroponik sistem wick untuk mendukung kemandirian pangan rumah tangga.",
-    "category": "Pengabdian kepada Masyarakat"
+    "category": "Pengabdian kepada Masyarakat",
+    "categoryEn": "Community Engagement",
+    "summaryEn": "Training and hands-on practice in wick-system hydroponic pak choi cultivation to support household food self-sufficiency."
   },
   {
     "id": "jimdp-2025-tebu",
@@ -37,7 +39,9 @@
       "Dewi Fatmawaty Sabiku"
     ],
     "summary": "Analisis efisiensi usaha tani bibit tebu bagal dan strategi pengembangan sistem pembibitan mandiri di Kecamatan Balung, Jember.",
-    "category": "Penelitian"
+    "category": "Penelitian",
+    "categoryEn": "Research",
+    "summaryEn": "Analysis of sugarcane sett-seedling farm efficiency and strategies for developing an independent seedling production system in Balung, Jember."
   },
   {
     "id": "comdev-2025-mawar",
@@ -56,7 +60,9 @@
       "Dewi Fatmawaty Sabiku"
     ],
     "summary": "Pendampingan pengolahan kuncup mawar menjadi teh, termasuk pengeringan dan pengemasan produk bersama KWT Nawasena.",
-    "category": "Pengabdian kepada Masyarakat"
+    "category": "Pengabdian kepada Masyarakat",
+    "categoryEn": "Community Engagement",
+    "summaryEn": "Assistance in processing rose buds into tea, including drying and product packaging with the Nawasena Women Farmers Group."
   },
   {
     "id": "jatimas-2025-biopestisida",
@@ -78,7 +84,9 @@
       "Ferril Muhammad Nur"
     ],
     "summary": "Penyuluhan dan demonstrasi pembuatan pestisida nabati berbahan bawang putih untuk pengendalian organisme pengganggu tanaman.",
-    "category": "Pengabdian kepada Masyarakat"
+    "category": "Pengabdian kepada Masyarakat",
+    "categoryEn": "Community Engagement",
+    "summaryEn": "Extension activities and a demonstration of botanical pesticide preparation using garlic to help control plant pests."
   },
   {
     "id": "fafela-2026-edamame",
@@ -98,7 +106,9 @@
       "Estin Roso Pristiwaningsih"
     ],
     "summary": "Kajian perlakuan biopriming benih edamame menggunakan Trichoderma harzianum dan abu sekam sebagai media matriconditioning.",
-    "category": "Penelitian"
+    "category": "Penelitian",
+    "categoryEn": "Research",
+    "summaryEn": "A study of edamame seed biopriming using Trichoderma harzianum and rice husk ash as a matriconditioning medium."
   },
   {
     "id": "jirk-2026-matriconditioning",
@@ -116,6 +126,8 @@
       "Dewi Fatmawaty Sabiku"
     ],
     "summary": "Evaluasi jenis matriks dan aplikasi Trichoderma harzianum untuk meningkatkan mutu fisiologis benih kedelai kedaluwarsa.",
-    "category": "Penelitian"
+    "category": "Penelitian",
+    "categoryEn": "Research",
+    "summaryEn": "Evaluation of matrix types and Trichoderma harzianum application to improve the physiological quality of expired soybean seeds."
   }
 ]
