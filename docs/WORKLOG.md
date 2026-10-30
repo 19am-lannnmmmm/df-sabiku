@@ -1,3 +1,10 @@
+## 2026-10-30 — v0.2.7 — Bilingual academic content
+- Added English-language fields to the activity and publication JSON records.
+- Updated React rendering so English mode localizes activity cards, publication categories/summaries, education program labels, and research-interest labels.
+- Kept scholarly publication titles, journal names, and author names unchanged to preserve their published bibliographic form.
+- Commits: `ca269a5` (publication translations), `cd3fd9f` (activity translations), `0964305` (bilingual rendering).
+- Deployment verification pending.
+
 # Worklog — DF Sabiku Portfolio
 
 ## 2026-10-30 — v0.2.6 — Documentation archive empty state
