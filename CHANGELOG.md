@@ -2,6 +2,29 @@
 
 Semua perubahan penting proyek dicatat di sini. Format versi mengikuti Semantic Versioning selama tahap pengembangan.
 
+## [0.2.0] — 2026-10-30
+Status: **Riset awal dan evidence log; build/deployment masih belum diverifikasi**
+
+### Added
+- Riset web melalui Firecrawl pada profil Google Scholar, SINTA, repositori SIPORA, penerbit jurnal, dan situs resmi Politeknik Negeri Jember.
+- Identifikasi Google Scholar profile ID `16NBQ3MAAAAJ` dan SINTA author ID `6935628`; keduanya menunjukkan afiliasi Politeknik Negeri Jember.
+- Temuan awal publikasi 2019–2026 dan kegiatan pengabdian/edukasi yang disebut dalam berita resmi Polije.
+- Evidence log diperbarui dengan tautan sumber, tanggal akses, confidence, dan catatan perbedaan cakupan indeks.
+- Project status diperbarui untuk mencerminkan riset dan pekerjaan yang masih tertunda.
+
+### Important notes
+- Google Scholar menampilkan 8 rekam artikel; SINTA menampilkan ringkasan 8 artikel Google Scholar dan metrik saat akses. Angka tersebut merupakan snapshot, bukan klaim total publikasi sepanjang karier.
+- SIPORA creator browse menampilkan satu item untuk nama persis tersebut. Perbedaan indeks perlu dipertahankan secara transparan.
+- ORCID personal belum berhasil dikonfirmasi; jangan pasang tautan/ikon ORCID sebelum ada bukti.
+- Beberapa rekam publikasi masih memerlukan validasi author order, DOI, volume/issue, dan halaman.
+- Build, deployment, foto publik, dan implementasi WebGL tetap belum diverifikasi/selesai.
+
+### Next
+- Lanjutkan verifikasi metadata publikasi di halaman penerbit/DOI.
+- Verifikasi biodata, pendidikan, jabatan fungsional, dan pengalaman melalui dokumen resmi atau konfirmasi pemilik.
+- Siapkan data konten terstruktur setelah validasi.
+- Jalankan build dan cek GitHub Pages.
+
 ## [0.1.0] — 2026-10-30
 Status: **Fondasi awal / belum production-verified**
 
@@ -18,14 +41,7 @@ Status: **Fondasi awal / belum production-verified**
 ### Known limitations
 - Build belum diverifikasi dengan menjalankan pipeline penuh.
 - Deployment GitHub Pages belum diverifikasi.
-- Foto cutout belum dipasang; sumber foto masih perlu diproses.
-- Data riset, publikasi, pengajaran, dan pengabdian belum diverifikasi dari sumber publik.
+- Foto cutout belum dipasang.
+- Konten riset, publikasi, pengajaran, dan pengabdian belum lengkap diverifikasi.
 - Bagian kontak masih placeholder `mailto:`.
 - WebGL/Three.js, scroll choreography, dan animasi partikel tingkat lanjut belum dimulai.
-
-### Next
-- Verifikasi build dan deployment.
-- Riset profil akademik dan publikasi dengan tautan sumber.
-- Siapkan aset foto cutout.
-- Lengkapi konten berbasis bukti sebelum dipublikasikan.
-- Implementasi WebGL bertahap.
