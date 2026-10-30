@@ -1,5 +1,14 @@
 # Worklog — DF Sabiku Portfolio
 
+## 2026-10-30 — v0.2.5 — Contact link repair and profile media audit
+- Replaced the nonfunctional empty `mailto:` anchor with Google Scholar, SINTA, ORCID, and SIPORA links already present in `profile.json`.
+- Added responsive layout for the academic profile links.
+- User confirmed the cup and pink handbag should be excluded from the portrait composition.
+- Tested an OpenCV GrabCut cutout against the original upload. Staircase fragments remained around the hijab and shoulder, so the generated PNG was rejected and not committed or deployed. Preserve identity and source pixels; cutout remains open.
+- Commits: `592365d` (App contact links), `3342ddd` (contact link styles).
+
+
+
 ## 2026-10-30 — v0.2.4 — GitHub Pages deployment verified
 - Rechecked GitHub Actions run #52: run ID `41003026478`, head commit `7ca77c576d4dc07331f29115937082a52435a264`.
 - Workflow status is `completed` and conclusion is `success`.
