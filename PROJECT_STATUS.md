@@ -1,8 +1,8 @@
 # Project Status — DF Sabiku Portfolio
 
 **Last updated:** 2026-10-30
-**Latest commit:** `f7ad848` — hide empty archive placeholder when activity/document content exists
-**Current work:** v0.2.5 — contact links repaired; profile cutout still under preparation  
+**Latest commits:** `ca269a5`, `cd3fd9f`, `0964305` — add English translations for activity and publication cards
+**Current work:** v0.2.7 — bilingual academic card content; profile cutout still under preparation  
 **Current version:** v0.2.4 (GitHub Pages deployment verified)  
 **Branch:** main  
 **Repository:** https://github.com/19am-lannnmmmm/df-sabiku  
@@ -12,6 +12,8 @@
 Fondasi React/Vite/TypeScript, tema botani bilingual, model konten JSON, dan workflow GitHub Pages sudah tersedia. GitHub Actions run **#52** (commit `7ca77c5`) berstatus **completed / success** pada 2026-10-30. Ini mengonfirmasi pipeline build dan deploy workflow berhasil. Website dapat ditinjau di URL Pages di atas.
 
 ## Pekerjaan selesai
+- [x] English mode now translates activity titles, locations, roles, summaries, publication categories and summaries; original scholarly publication titles and author names remain unchanged.
+- [x] Education program labels and research-interest labels are localized in English mode.
 - [x] Scaffold React + Vite + TypeScript, tema botani, bilingual.
 - [x] Profil utama memakai nama persis **Dewi Fatmawaty Sabiku**.
 - [x] Profil akademik: Google Scholar ID 16NBQ3MAAAAJ, SINTA ID 6935628.
@@ -33,6 +35,7 @@ Belum ada panel admin/CMS. Perubahan data dilakukan dengan mengedit JSON dan com
 
 ## Masih terbuka
 - [ ] Audit link dan metadata dokumen setelah penambahan file nyata.
+- [ ] Verify v0.2.7 deployment and manually test Indonesian/English toggle across all cards.
 - [ ] Konfirmasi pemilik atas ORCID, jabatan fungsional, pendidikan, serta isi biodata.
 - [ ] Konfirmasi foto publik dan arahan penghapusan gelas/tas.
 - [ ] Tambahkan pengalaman mengajar, mata kuliah, hibah, pembimbingan, penghargaan jika ada bukti.
