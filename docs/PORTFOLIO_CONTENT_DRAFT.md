@@ -27,7 +27,7 @@ Catatan: daftar fokus ini merupakan sintesis topik pada publikasi dan kegiatan y
 3. **Effect of Seed Biopriming with Trichoderma harzianum for Increasing Seed Quality of Vegetable Soybean (Edamame)** — FAFELA, 2026. DOI: https://doi.org/10.67580/fafela.v2i2.26
 4. **Edukasi Pemanfaatan Biopestisida dari Umbi Bawang Putih sebagai Alternatif Pengendalian OPT Ramah Lingkungan di Grand Puri Bunga Nirwana, Jember** — JATIMAS, 2025. DOI: https://doi.org/10.30737/jatimas.v5i1.6461
 
-Metadata item 3–4 masih memerlukan pemeriksaan akhir author order dan metadata lengkap pada halaman penerbit. Lihat `docs/RESEARCH_SOURCES.md`.
+Enam rekam publikasi di atas sudah diperiksa pada halaman penerbit/DOI dan menampilkan nama lengkap Dewi Fatmawaty Sabiku serta afiliasi Politeknik Negeri Jember. Lihat docs/RESEARCH_SOURCES.md untuk metadata dan bukti per item.
 
 ## Kegiatan pengabdian dan edukasi yang dapat ditampilkan
 
@@ -41,9 +41,8 @@ Gunakan frasa "anggota tim" atau "terlibat dalam kegiatan" kecuali ada sumber ya
 
 - Google Scholar: https://scholar.google.com/citations?user=16NBQ3MAAAAJ&hl=en
 - SINTA: https://sinta.kemdiktisaintek.go.id/authors/profile/6935628
+- ORCID: https://orcid.org/0009-0009-9278-1855 (record menampilkan nama singkat Dewi F Sabiku, afiliasi kerja Politeknik Negeri Jember, dan email institusi terverifikasi; tetap minta konfirmasi pemilik sebelum rilis publik).
 - SIPORA creator record: https://sipora.polije.ac.id/view/creators/Dewi_Fatmawaty=3ASabiku=3A=3A.html
-
-ORCID belum dikonfirmasi; jangan tampilkan ikon atau tautan ORCID sampai pemilik memberikan ID yang benar atau ditemukan profil yang cocok.
 
 ## Data pemilik yang masih perlu konfirmasi
 
