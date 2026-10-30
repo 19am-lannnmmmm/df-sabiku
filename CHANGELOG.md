@@ -1,24 +1,33 @@
-# Changelog — DF Sabiku\n\n## [0.2.3] — 2026-10-30\nStatus: **Type declaration fix committed; awaiting CI result**\n\n### Fixed\n- Added `src/vite-env.d.ts` referencing `vite/client`; this resolves the observed TypeScript error for `import.meta.env.BASE_URL`.\n- Confirmed in run #47 that dependency installation succeeded; the build failed during `tsc -b`, so no Pages artifact was uploaded and deploy was skipped.\n\n\n## [0.2.2] — 2026-10-30\nStatus: **Workflow compatibility fix; awaiting GitHub Actions result**\n\n### Fixed\n- Removed `setup-node` npm cache configuration because the repository has no lockfile yet; dependency installation continues with `npm install`.\n- Triggered a fresh Pages workflow run. Build and deployment are not yet confirmed.\n Portfolio
+# Changelog — DF Sabiku Portfolio
+
+## [0.2.4] — 2026-10-30
+Status: **GitHub Actions and GitHub Pages deployment successful**
+
+### Verified
+- GitHub Actions run #52 completed with conclusion `success`.
+- The workflow completed after adding the Vite environment type declaration.
+- Live deployment target: https://19am-lannnmmmm.github.io/df-sabiku/
+
+## [0.2.3] — 2026-10-30
+Status: **Fixed and validated by run #52**
+
+### Fixed
+- Added `src/vite-env.d.ts` referencing `vite/client`; this resolves the observed TypeScript error for `import.meta.env.BASE_URL`.
+- Run #47 exposed the missing declaration; run #52 subsequently completed successfully.
+
+## [0.2.2] — 2026-10-30
+### Fixed
+- Removed `setup-node` npm cache configuration because the repository has no lockfile yet; dependency installation continues with `npm install`.
 
 ## [0.2.1] — 2026-10-30
-Status: **Data-driven content integration; build/deployment not yet verified**
-
 ### Added
-- Added public/data/publications.json with six publisher-checked publication records.
-- Added public/data/activities.json with three official Polije outreach/news records.
+- Added `public/data/publications.json` with six publisher-checked publication records.
+- Added `public/data/activities.json` with three official Polije outreach/news records.
 - Updated the React app to fetch and render publication and activity cards from JSON.
 - Added responsive card styles for publication and activity sections.
-- Added academic profile links to src/data/profile.json, including ORCID 0009-0009-9278-1855.
-- Corrected ORCID research note: public profile is abbreviated as Dewi F Sabiku, lists Politeknik Negeri Jember employment and verified polije.ac.id domain, and the same ORCID is linked from a publisher author record.
-
-### Maintenance model
+- Added academic profile links to `src/data/profile.json`, including ORCID 0009-0009-9278-1855.
 - Routine publication/activity additions or removals are JSON-only changes; UI components do not need editing.
-- Documents remain folder-based with optional adjacent .meta.json metadata.
-- No admin/CMS interface exists; content updates are committed through GitHub.
-
-### Validation
-- Publisher pages checked for six publications and author affiliation.
-- Code changes committed, but full npm build and Pages deployment are still pending.
+- Documents remain folder-based with optional adjacent `.meta.json` metadata. No admin/CMS interface exists.
 
 ## [0.2.0] — 2026-10-30
 - Initial academic research discovery and evidence log.
@@ -27,4 +36,3 @@ Status: **Data-driven content integration; build/deployment not yet verified**
 
 ## [0.1.0] — 2026-10-30
 - React/Vite/TypeScript scaffold, initial bilingual portfolio UI, profile JSON, document folders, metadata index generator, GitHub Pages workflow and README.
-- Build/deployment not verified.
