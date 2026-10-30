@@ -1,13 +1,13 @@
 # Project Status — DF Sabiku Portfolio
 
 **Last updated:** 2026-10-30  
-**Current version:** v0.2.1 (data-driven academic content integration)  
+**Current version:** v0.2.2 (CI workflow compatibility fix)  
 **Branch:** main  
 **Repository:** https://github.com/19am-lannnmmmm/df-sabiku  
 **Deployment target:** https://19am-lannnmmmm.github.io/df-sabiku/
 
 ## Posisi saat ini
-Fondasi React/Vite/TypeScript sudah ada. Data publikasi dan kegiatan yang diverifikasi kini dipisahkan ke file JSON dan dibaca oleh website. Nama profil utama di src/data/profile.json tetap **Dewi Fatmawaty Sabiku**. Build dan deployment belum dinyatakan berhasil karena belum diuji.
+Fondasi React/Vite/TypeScript sudah ada. Data publikasi dan kegiatan yang diverifikasi kini dipisahkan ke file JSON dan dibaca oleh website. Nama profil utama di src/data/profile.json tetap **Dewi Fatmawaty Sabiku**. Build dan deployment masih menunggu hasil GitHub Actions setelah perbaikan workflow.
 
 ## Pekerjaan selesai
 - [x] Scaffold React + Vite + TypeScript, tema botani, bilingual.
@@ -29,7 +29,7 @@ Fondasi React/Vite/TypeScript sudah ada. Data publikasi dan kegiatan yang diveri
 Tidak ada panel admin/CMS saat ini. Perubahan data dilakukan dengan mengedit JSON dan commit ke GitHub; tidak perlu mengubah komponen UI untuk operasi tambah/hapus biasa.
 
 ## Masih terbuka
-- [ ] Build test dan perbaikan TypeScript/CSS bila ditemukan.
+- [ ] Build test dan perbaikan TypeScript/CSS bila ditemukan (workflow baru dipicu; hasil belum tersedia).
 - [ ] Verifikasi deployment GitHub Pages.
 - [ ] Audit link dan metadata dokumen.
 - [ ] Konfirmasi pemilik atas ORCID, jabatan fungsional, pendidikan, serta isi biodata.
@@ -37,7 +37,7 @@ Tidak ada panel admin/CMS saat ini. Perubahan data dilakukan dengan mengedit JSO
 - [ ] Tambahkan pengalaman mengajar, mata kuliah, hibah, pembimbingan, penghargaan jika ada bukti.
 - [ ] Implementasi animasi dan WebGL sesuai roadmap.
 
-## Temuan akademik (snapshot 2026-10-30)
+## Perbaikan teknis v0.2.2\n- Menghapus konfigurasi `cache: npm` dari `setup-node` karena repository belum memiliki lockfile; workflow tetap menjalankan `npm install`.\n- Push terbaru memicu workflow baru; status build/deploy belum boleh dianggap berhasil sampai run selesai.\n- `public/data/document-index.json` saat ini valid sebagai array kosong `[]` karena belum ada dokumen yang diunggah.\n\n## Temuan akademik (snapshot 2026-10-30)
 - Google Scholar: 8 artikel, 3 sitasi, h-index 1, i10-index 0 (snapshot saat akses).
 - SINTA ID 6935628: Score Overall 46; Score 3Yr 45.
 - Enam artikel memiliki dukungan metadata publisher/DOI yang menyebut nama lengkap dan afiliasi yang sama.
