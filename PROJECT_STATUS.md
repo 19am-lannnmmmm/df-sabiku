@@ -1,56 +1,49 @@
 # Project Status — DF Sabiku Portfolio
 
 **Last updated:** 2026-10-30  
-**Current version:** v0.2.0 (research discovery & content verification in progress)  
+**Current version:** v0.2.1 (data-driven academic content integration)  
 **Branch:** main  
 **Repository:** https://github.com/19am-lannnmmmm/df-sabiku  
 **Deployment target:** https://19am-lannnmmmm.github.io/df-sabiku/
 
 ## Posisi saat ini
-Fondasi frontend dan struktur konten sudah ada di repository. Riset sumber publik kini sudah dimulai dan menghasilkan profil akademik yang cocok serta beberapa publikasi dan kegiatan resmi kampus. Website belum dinyatakan lolos build atau sudah ter-deploy.
+Fondasi React/Vite/TypeScript sudah ada. Data publikasi dan kegiatan yang diverifikasi kini dipisahkan ke file JSON dan dibaca oleh website. Nama profil utama di src/data/profile.json tetap **Dewi Fatmawaty Sabiku**. Build dan deployment belum dinyatakan berhasil karena belum diuji.
 
-## Status pekerjaan
+## Pekerjaan selesai
+- [x] Scaffold React + Vite + TypeScript, tema botani, bilingual.
+- [x] Profil utama memakai nama persis **Dewi Fatmawaty Sabiku**.
+- [x] Profil akademik: Google Scholar ID 16NBQ3MAAAAJ, SINTA ID 6935628.
+- [x] ORCID teridentifikasi: 0009-0009-9278-1855; record menampilkan Dewi F Sabiku, employment Politeknik Negeri Jember, verified email domain polije.ac.id, dan ID yang sama tertaut di laman penulis artikel bibit tebu. Konfirmasi pemilik tetap disarankan.
+- [x] Enam publikasi diperiksa di halaman penerbit/DOI; nama lengkap Dewi Fatmawaty Sabiku dan afiliasi Politeknik Negeri Jember tercantum.
+- [x] Tiga kegiatan/berita resmi Polije dicatat dengan peran hati-hati sebagai anggota tim.
+- [x] Data publikasi dan kegiatan disimpan terpisah dalam JSON dan dirender otomatis.
+- [x] Kartu publikasi/kegiatan diberi styling responsif.
+- [x] Evidence log, content draft, changelog, roadmap, worklog diperbarui.
 
-### Fondasi teknis
-- [x] React + Vite + TypeScript scaffold
-- [x] Tema visual awal dan layout responsif
-- [x] Toggle bahasa Indonesia/Inggris
-- [x] Profil dan pendidikan dipisahkan ke JSON
-- [x] Folder dokumen per kategori dan generator indeks
-- [x] Workflow GitHub Actions untuk Pages
-- [ ] Jalankan build dan perbaiki sampai lulus
-- [ ] Verifikasi deployment GitHub Pages
-- [ ] Verifikasi tautan dokumen dan metadata
+## Struktur konten yang mudah dirawat
+- src/data/profile.json — identitas, pendidikan, minat, tautan akademik.
+- public/data/publications.json — daftar publikasi; tambah/hapus/edit objek data.
+- public/data/activities.json — daftar kegiatan; tambah/hapus/edit objek data.
+- public/documents/{research,publications,community,teaching,other}/ — unggah file; metadata berdampingan memakai .meta.json; indeks dibuat oleh script.
 
-### Riset dan konten
-- [x] Temukan Google Scholar profile yang cocok (ID 16NBQ3MAAAAJ; afiliasi Politeknik Negeri Jember)
-- [x] Temukan SINTA profile yang cocok (ID 6935628; D4 Teknik Produksi Benih)
-- [x] Temukan rekam publikasi melalui Scholar, SIPORA, DOI/publisher pages
-- [x] Temukan tiga berita resmi Polije yang menyebut Dewi sebagai anggota tim kegiatan/pengabdian
-- [x] Buat evidence log dengan URL, tanggal akses, confidence, dan catatan perbedaan indeks
-- [ ] Verifikasi metadata final seluruh publikasi (author order, DOI, issue/pages)
-- [ ] Konfirmasi ORCID (belum ditemukan profil personal yang cocok)
-- [ ] Verifikasi jabatan fungsional, riwayat pendidikan, dan CV dengan dokumen resmi/pemilik
-- [ ] Lengkapi daftar pengajaran, riset, hibah, pembimbingan, dan kegiatan lain
-- [ ] Ubah data terverifikasi menjadi konten JSON yang digunakan website
+Tidak ada panel admin/CMS saat ini. Perubahan data dilakukan dengan mengedit JSON dan commit ke GitHub; tidak perlu mengubah komponen UI untuk operasi tambah/hapus biasa.
 
-### Media dan motion
-- [ ] Konfirmasi foto yang diunggah boleh dipakai sebagai foto publik
-- [ ] Buat aset cutout sesuai arahan (gelas/tas belum dikonfirmasi)
-- [ ] Implementasi animasi DOM/GSAP atau Framer Motion (pilihan belum final)
-- [ ] Implementasi WebGL/Three.js dan scroll narrative
+## Masih terbuka
+- [ ] Build test dan perbaikan TypeScript/CSS bila ditemukan.
+- [ ] Verifikasi deployment GitHub Pages.
+- [ ] Audit link dan metadata dokumen.
+- [ ] Konfirmasi pemilik atas ORCID, jabatan fungsional, pendidikan, serta isi biodata.
+- [ ] Konfirmasi foto publik dan arahan penghapusan gelas/tas.
+- [ ] Tambahkan pengalaman mengajar, mata kuliah, hibah, pembimbingan, penghargaan jika ada bukti.
+- [ ] Implementasi animasi dan WebGL sesuai roadmap.
 
-## Temuan akademik awal (snapshot 2026-10-30)
-- Google Scholar: 8 artikel terdaftar, 3 sitasi, h-index 1, i10-index 0.
-- SINTA ID 6935628: SINTA Score Overall 46; SINTA Score 3Yr 45. Profil menampilkan D4 Teknik Produksi Benih, Politeknik Negeri Jember.
-- Rekam yang didukung sumber penerbit/repositori antara lain artikel hidroponik (DOI 10.29303/abdiinsani.v12i5.2404), artikel usahatani bibit tebu (DOI 10.37149/jimdp.v10i3.2123), serta beberapa rekam jurnal 2025–2026 yang masih perlu pemeriksaan metadata final.
-- Berita resmi Polije yang ditemukan: pemberdayaan petani Klungkung (2025), pelatihan budidaya krisan SDN Kemuning Lor 3 (2025), dan Green Education sayuran organik (2026).
-- SIPORA author browse page hanya menampilkan satu item untuk nama creator tersebut, sedangkan Google Scholar menampilkan delapan rekam artikel. Perbedaan cakupan indeks dicatat; jangan mengklaim satu angka sebagai total publikasi final.
+## Temuan akademik (snapshot 2026-10-30)
+- Google Scholar: 8 artikel, 3 sitasi, h-index 1, i10-index 0 (snapshot saat akses).
+- SINTA ID 6935628: Score Overall 46; Score 3Yr 45.
+- Enam artikel memiliki dukungan metadata publisher/DOI yang menyebut nama lengkap dan afiliasi yang sama.
+- SIPORA author browse menampilkan satu item sementara Google Scholar menampilkan delapan rekam; perbedaan cakupan indeks tidak disamakan menjadi total publikasi.
 
-Rincian dan semua URL sumber ada di `docs/RESEARCH_SOURCES.md`.
-
-## Catatan foto
-Foto unggahan dalam percakapan belum dipasang ke repository dan belum dikonfirmasi sebagai aset publik. Konfirmasi identitas/izin penggunaan dan apakah gelas serta tas dihapus masih diperlukan.
+Rincian sumber dan batas verifikasi: docs/RESEARCH_SOURCES.md. Draft konten: docs/PORTFOLIO_CONTENT_DRAFT.md.
 
 ## Aturan kelanjutan
-Setiap sesi wajib memperbarui status, changelog, worklog, dan issue yang relevan. Jangan klaim build/deployment berhasil sebelum pipeline benar-benar diuji.
+Setiap sesi wajib memperbarui status, changelog, worklog, dan issue relevan. Jangan klaim build/deployment berhasil sebelum pipeline benar-benar diuji.
