@@ -33,5 +33,5 @@ function walk(dir, category) {
 
 for (const category of categories) walk(path.join(root, category), category)
 fs.mkdirSync(path.dirname(output), { recursive: true })
-fs.writeFileSync(output, JSON.stringify(records.sort((a,b) => (b.year || '').localeCompare(a.year || '')), null, 2) + '\\n')
+fs.writeFileSync(output, JSON.stringify(records.sort((a,b) => (b.year || '').localeCompare(a.year || '')), null, 2) + '\n')
 console.log(`Generated document index: ${records.length} file(s)`)
