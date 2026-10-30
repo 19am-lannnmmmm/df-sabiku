@@ -12,6 +12,8 @@
 | D-008 | 2026-10-30 | Konten dipisahkan dari komponen | Pemeliharaan konten tanpa mengubah layout |
 | D-009 | 2026-10-30 | Canvas WebGL di belakang, konten DOM | SEO, aksesibilitas, dan teks tetap bisa dipilih |
 
+| D-010 | 2026-10-30 | Gelas dan tas pink dihilangkan dari komposisi hero | Konfirmasi eksplisit pengguna; gunakan crop/segmentasi tanpa mengubah wajah atau identitas |
+
 ## Pending decisions
 - Pilih satu sistem animasi UI: GSAP + ScrollTrigger (Lenis opsional) atau Framer Motion.
 - Tentukan email publik dan academic profile links.
