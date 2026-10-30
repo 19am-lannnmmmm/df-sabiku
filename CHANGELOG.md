@@ -1,47 +1,30 @@
 # Changelog — DF Sabiku Portfolio
 
-Semua perubahan penting proyek dicatat di sini. Format versi mengikuti Semantic Versioning selama tahap pengembangan.
+## [0.2.1] — 2026-10-30
+Status: **Data-driven content integration; build/deployment not yet verified**
+
+### Added
+- Added public/data/publications.json with six publisher-checked publication records.
+- Added public/data/activities.json with three official Polije outreach/news records.
+- Updated the React app to fetch and render publication and activity cards from JSON.
+- Added responsive card styles for publication and activity sections.
+- Added academic profile links to src/data/profile.json, including ORCID 0009-0009-9278-1855.
+- Corrected ORCID research note: public profile is abbreviated as Dewi F Sabiku, lists Politeknik Negeri Jember employment and verified polije.ac.id domain, and the same ORCID is linked from a publisher author record.
+
+### Maintenance model
+- Routine publication/activity additions or removals are JSON-only changes; UI components do not need editing.
+- Documents remain folder-based with optional adjacent .meta.json metadata.
+- No admin/CMS interface exists; content updates are committed through GitHub.
+
+### Validation
+- Publisher pages checked for six publications and author affiliation.
+- Code changes committed, but full npm build and Pages deployment are still pending.
 
 ## [0.2.0] — 2026-10-30
-Status: **Riset awal dan evidence log; build/deployment masih belum diverifikasi**
-
-### Added
-- Riset web melalui Firecrawl pada profil Google Scholar, SINTA, repositori SIPORA, penerbit jurnal, dan situs resmi Politeknik Negeri Jember.
-- Identifikasi Google Scholar profile ID `16NBQ3MAAAAJ` dan SINTA author ID `6935628`; keduanya menunjukkan afiliasi Politeknik Negeri Jember.
-- Temuan awal publikasi 2019–2026 dan kegiatan pengabdian/edukasi yang disebut dalam berita resmi Polije.
-- Evidence log diperbarui dengan tautan sumber, tanggal akses, confidence, dan catatan perbedaan cakupan indeks.
-- Project status diperbarui untuk mencerminkan riset dan pekerjaan yang masih tertunda.
-
-### Important notes
-- Google Scholar menampilkan 8 rekam artikel; SINTA menampilkan ringkasan 8 artikel Google Scholar dan metrik saat akses. Angka tersebut merupakan snapshot, bukan klaim total publikasi sepanjang karier.
-- SIPORA creator browse menampilkan satu item untuk nama persis tersebut. Perbedaan indeks perlu dipertahankan secara transparan.
-- ORCID personal belum berhasil dikonfirmasi; jangan pasang tautan/ikon ORCID sebelum ada bukti.
-- Beberapa rekam publikasi masih memerlukan validasi author order, DOI, volume/issue, dan halaman.
-- Build, deployment, foto publik, dan implementasi WebGL tetap belum diverifikasi/selesai.
-
-### Next
-- Lanjutkan verifikasi metadata publikasi di halaman penerbit/DOI.
-- Verifikasi biodata, pendidikan, jabatan fungsional, dan pengalaman melalui dokumen resmi atau konfirmasi pemilik.
-- Siapkan data konten terstruktur setelah validasi.
-- Jalankan build dan cek GitHub Pages.
+- Initial academic research discovery and evidence log.
+- Matched Google Scholar and SINTA profiles and recorded official Polije activity sources.
+- Added bilingual portfolio content draft and project tracking updates.
 
 ## [0.1.0] — 2026-10-30
-Status: **Fondasi awal / belum production-verified**
-
-### Added
-- Scaffold React + Vite + TypeScript.
-- Tema awal hijau botani, layout responsif, navigasi bilingual ID/EN.
-- Data identitas dan pendidikan dipisahkan ke `src/data/profile.json`.
-- Section Hero, About, Education, Research Interests, Documentation, Publications, Contact.
-- Folder dokumentasi per kategori.
-- Script indeks dokumen otomatis dan metadata `.meta.json`.
-- GitHub Actions workflow untuk GitHub Pages.
-- README berisi instruksi lokal dan tata cara unggah dokumentasi.
-
-### Known limitations
-- Build belum diverifikasi dengan menjalankan pipeline penuh.
-- Deployment GitHub Pages belum diverifikasi.
-- Foto cutout belum dipasang.
-- Konten riset, publikasi, pengajaran, dan pengabdian belum lengkap diverifikasi.
-- Bagian kontak masih placeholder `mailto:`.
-- WebGL/Three.js, scroll choreography, dan animasi partikel tingkat lanjut belum dimulai.
+- React/Vite/TypeScript scaffold, initial bilingual portfolio UI, profile JSON, document folders, metadata index generator, GitHub Pages workflow and README.
+- Build/deployment not verified.
