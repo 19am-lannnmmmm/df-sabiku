@@ -1,0 +1,41 @@
+import { useState } from 'react'
+import { ArrowDown, ArrowUpRight, BookOpen, FlaskConical, Sprout, GraduationCap, Menu, X, Languages, Mail, Leaf } from 'lucide-react'
+import profile from './data/profile.json'
+
+type Lang = 'id' | 'en'
+const copy = {
+  id: { nav: ['Tentang', 'Riset', 'Dokumentasi', 'Publikasi', 'Kontak'], eyebrow: 'PORTOFOLIO AKADEMIK · PENELITI BENIH', intro: 'Menumbuhkan pengetahuan,', accent: 'merawat masa depan.', about: 'Tentang Saya', aboutText: 'Saya adalah dosen dan peneliti di bidang Teknik Produksi Benih. Melalui eksplorasi ilmu dan teknologi benih, saya berupaya mendukung pengembangan pertanian yang produktif dan berkelanjutan.', education: 'Pendidikan', research: 'Fokus Penelitian', researchText: 'Ruang eksplorasi ilmiah yang terus berkembang melalui riset, pembelajaran, dan kolaborasi.', docs: 'Dokumentasi & Kegiatan', docsText: 'Arsip perjalanan penelitian, publikasi, dan pengabdian kepada masyarakat akan ditampilkan di sini.', publications: 'Publikasi & Luaran', publicationsText: 'Kumpulan artikel ilmiah, prosiding, buku, HKI, dan luaran penelitian.', contact: 'Mari terhubung', contactText: 'Terbuka untuk diskusi akademik, kolaborasi penelitian, dan kegiatan pengembangan ilmu.', footer: 'Ilmu bertumbuh ketika dibagikan.', explore: 'Jelajahi portofolio', soon: 'Konten akan ditambahkan' },
+  en: { nav: ['About', 'Research', 'Documentation', 'Publications', 'Contact'], eyebrow: 'ACADEMIC PORTFOLIO · SEED RESEARCHER', intro: 'Growing knowledge,', accent: 'cultivating tomorrow.', about: 'About Me', aboutText: 'I am a lecturer and researcher in Seed Production Engineering. Through seed science and technology, I aim to contribute to productive and sustainable agriculture.', education: 'Education', research: 'Research Interests', researchText: 'An evolving space for scientific exploration through research, teaching, and collaboration.', docs: 'Documentation & Activities', docsText: 'An archive of research journeys, publications, and community engagement will appear here.', publications: 'Publications & Outputs', publicationsText: 'A collection of scientific articles, proceedings, books, intellectual property, and research outputs.', contact: "Let's connect", contactText: 'Open to academic discussions, research collaborations, and knowledge-sharing activities.', footer: 'Knowledge grows when shared.', explore: 'Explore portfolio', soon: 'Content coming soon' }
+}
+
+function App() {
+  const [lang, setLang] = useState<Lang>('id')
+  const [menuOpen, setMenuOpen] = useState(false)
+  const t = copy[lang]
+  const links = ['about', 'research', 'documentation', 'publications', 'contact']
+  return <div className="site-shell">
+    <div className="ambient ambient-one" /><div className="ambient ambient-two" />
+    <header className="topbar">
+      <a className="brand" href="#home"><span className="brand-mark"><Sprout size={19}/></span><span>DF<span className="brand-dot">.</span></span></a>
+      <nav className={menuOpen ? 'nav nav-open' : 'nav'}>{t.nav.map((label, i) => <a key={links[i]} href={'#'+links[i]} onClick={() => setMenuOpen(false)}>{label}</a>)}</nav>
+      <div className="header-actions"><button className="lang-button" onClick={() => setLang(lang === 'id' ? 'en' : 'id')} aria-label="Change language"><Languages size={16}/>{lang === 'id' ? 'EN' : 'ID'}</button><button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">{menuOpen ? <X/> : <Menu/>}</button></div>
+    </header>
+    <main>
+      <section className="hero" id="home">
+        <div className="hero-copy"><div className="eyebrow"><span className="eyebrow-line"/>{t.eyebrow}</div><h1>{t.intro}<br/><em>{t.accent}</em></h1>
+          <p className="hero-name">{profile.name}, {profile.degree}</p><p className="hero-role">{profile.role[lang]} · {profile.position[lang]}</p><p className="hero-affiliation">{profile.institution}<br/>{profile.program[lang]}</p>
+          <p className="hero-tagline">{profile.tagline[lang]}</p><a className="primary-link" href="#about">{t.explore}<ArrowDown size={17}/></a>
+        </div>
+        <div className="hero-art" aria-label="Ilustrasi benih dan pertumbuhan tanaman"><div className="orbit orbit-a"/><div className="orbit orbit-b"/><div className="orbit orbit-c"/><div className="seed-core"><div className="seed-glow"/><div className="seed-shape"/><div className="sprout-stem"/><div className="sprout-leaf leaf-left"/><div className="sprout-leaf leaf-right"/></div>{Array.from({length:34},(_,i)=><i key={i} className="particle" style={{'--i':i} as React.CSSProperties}/>)}<span className="art-caption">SEED · SCIENCE · SUSTAINABILITY</span></div>
+        <div className="hero-scroll"><span/>SCROLL TO EXPLORE</div>
+      </section>
+      <section className="section about-section" id="about"><div className="section-kicker">01 / {t.about}</div><div className="section-grid"><div><h2>{t.about}</h2><p className="lead">{t.aboutText}</p><div className="profile-facts"><span>{profile.institution}</span><span>{profile.program[lang]}</span><span>{profile.position[lang]}</span></div></div><div className="education-card"><div className="card-icon"><GraduationCap/></div><h3>{t.education}</h3>{profile.education.map(item=><div className="education-row" key={item.level}><span className="education-year">{item.year}</span><div><strong>{item.level} · {item.institution}</strong><p>{item.program}</p></div></div>)}</div></div></section>
+      <section className="section research-section" id="research"><div className="section-kicker">02 / {t.research}</div><div className="section-heading"><h2>{t.research}</h2><p>{t.researchText}</p></div><div className="interest-grid">{profile.researchInterests.map((item,i)=><article className="interest-card" key={item}><span className="interest-number">0{i+1}</span><FlaskConical size={22}/><h3>{item}</h3><span className="card-arrow"><ArrowUpRight size={18}/></span></article>)}</div></section>
+      <section className="section documentation-section" id="documentation"><div className="section-kicker">03 / {t.docs}</div><div className="section-heading"><h2>{t.docs}</h2><p>{t.docsText}</p></div><div className="feature-card"><div className="feature-symbol"><Leaf size={34}/></div><div><span className="feature-label">FIELD NOTES / ARCHIVE</span><h3>{t.soon}</h3><p>Tambahkan file ke folder <code>public/documents/</code> dan indeks akan dibuat saat website di-build.</p></div></div></section>
+      <section className="section publications-section" id="publications"><div className="section-kicker">04 / {t.publications}</div><div className="section-heading"><h2>{t.publications}</h2><p>{t.publicationsText}</p></div><div className="publication-empty"><BookOpen size={25}/><span>{t.soon}</span></div></section>
+      <section className="section contact-section" id="contact"><div className="section-kicker">05 / CONTACT</div><div className="contact-panel"><div><span className="feature-label">LET'S GROW IDEAS TOGETHER</span><h2>{t.contact}</h2><p>{t.contactText}</p></div><a href="mailto:" className="contact-link"><Mail size={19}/>{lang === 'id' ? 'Hubungi melalui email' : 'Get in touch'}<ArrowUpRight size={18}/></a></div></section>
+    </main>
+    <footer><a className="brand" href="#home"><span className="brand-mark"><Sprout size={17}/></span><span>DF<span className="brand-dot">.</span></span></a><span>{t.footer}</span><span>© {new Date().getFullYear()} Dewi Fatmawaty Sabiku</span></footer>
+  </div>
+}
+export default App
