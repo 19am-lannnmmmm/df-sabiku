@@ -1,68 +1,42 @@
 # Project Status — DF Sabiku Portfolio
 
 **Last updated:** 2026-10-30
-**Latest commit:** `84ba92c` — v0.2.8 documentation and metadata hardening; GitHub Actions run #82 successful and live page verified
-**Current work:** v0.2.8 — documentation copy and document-index metadata hardening; profile cutout still under preparation  
-**Current version:** v0.2.8 (GitHub Pages deployment verified)  
-**Branch:** main  
-**Repository:** https://github.com/19am-lannnmmmm/df-sabiku  
+**Current version:** v0.2.9 — panduan arsip dokumen dan template metadata disiapkan; CI untuk commit dokumentasi menunggu verifikasi.
+**Branch:** main
+**Repository:** https://github.com/19am-lannnmmmm/df-sabiku
 **Live site:** https://19am-lannnmmmm.github.io/df-sabiku/
 
 ## Posisi saat ini
-Fondasi React/Vite/TypeScript, tema botani bilingual, model konten JSON, dan workflow GitHub Pages sudah tersedia. GitHub Actions run **#82** (commit `84ba92c`) berstatus **completed / success** pada 2026-10-30. Live scrape mengonfirmasi intro dokumentasi v0.2.8 tampil, bersama tiga kegiatan, enam publikasi, dan tautan akademik.
+Fondasi React/Vite/TypeScript, tema botani bilingual, model konten JSON, dan workflow GitHub Pages tersedia. GitHub Actions run #84 pada commit `c41015c` completed dengan conclusion `success`; fixture test generator dijalankan sebelum build.
 
-## Pekerjaan selesai
-- [x] Replaced misleading documentation intro copy when archive entries are present.
-- [x] Metadata sidecars can no longer override generated document IDs, categories, file types, or URLs.
-- [x] English mode now translates activity titles, locations, roles, summaries, publication categories and summaries; original scholarly publication titles and author names remain unchanged.
-- [x] Education program labels and research-interest labels are localized in English mode.
-- [x] Scaffold React + Vite + TypeScript, tema botani, bilingual.
-- [x] Profil utama memakai nama persis **Dewi Fatmawaty Sabiku**.
-- [x] Profil akademik: Google Scholar ID 16NBQ3MAAAAJ, SINTA ID 6935628.
-- [x] ORCID teridentifikasi: 0009-0009-9278-1855; record menampilkan Dewi F Sabiku, employment Politeknik Negeri Jember, verified email domain polije.ac.id, dan ID yang sama tertaut di laman penulis artikel bibit tebu. Konfirmasi pemilik tetap disarankan.
-- [x] Enam publikasi diperiksa di halaman penerbit/DOI; nama lengkap Dewi Fatmawaty Sabiku dan afiliasi Politeknik Negeri Jember tercantum.
-- [x] Tiga kegiatan/berita resmi Polije dicatat dengan peran hati-hati sebagai anggota tim.
-- [x] Data publikasi dan kegiatan disimpan terpisah dalam JSON dan dirender otomatis.
-- [x] Kartu publikasi/kegiatan diberi styling responsif.
-- [x] GitHub Actions build dan GitHub Pages deployment berhasil pada run #52.
-- [x] Evidence log, content draft, changelog, roadmap, worklog diperbarui.
-
-## Struktur konten yang mudah dirawat
+## Struktur konten
 - `src/data/profile.json` — identitas, pendidikan, minat, tautan akademik.
-- `public/data/publications.json` — daftar publikasi; tambah/hapus/edit objek data.
-- `public/data/activities.json` — daftar kegiatan; tambah/hapus/edit objek data.
-- `public/documents/{research,publications,community,teaching,other}/` — unggah file; metadata berdampingan memakai `.meta.json`; indeks dibuat oleh script.
+- `public/data/publications.json` — daftar publikasi.
+- `public/data/activities.json` — daftar kegiatan.
+- `public/documents/{research,publications,community,teaching,other}/` — arsip PDF/gambar dan metadata `.meta.json`.
+- `public/documents/README.md` — panduan unggah dan publikasi dokumen.
+- `docs/templates/document.meta.json.example` — contoh metadata.
 
-Belum ada panel admin/CMS. Perubahan data dilakukan dengan mengedit JSON dan commit ke GitHub; dokumen ditambahkan ke folder sesuai kategori dengan metadata pendamping.
+Belum ada panel admin/CMS. Data diperbarui melalui GitHub; indeks dokumen dibuat otomatis saat build.
+
+## Pekerjaan terverifikasi
+- [x] Enam publikasi dan tiga kegiatan awal dimasukkan dari sumber publik.
+- [x] Bilingual UI dan kartu berbasis JSON.
+- [x] Generator indeks menetapkan ID, kategori, tipe, dan URL kanonis.
+- [x] Fixture test metadata konflik lolos pada GitHub Actions run #84.
+- [x] Panduan unggah dan template metadata disiapkan pada v0.2.9.
 
 ## Masih terbuka
-- [ ] Audit link dan metadata dokumen setelah penambahan file nyata.
-- [x] Verify v0.2.8 deployment; live page displays updated documentation intro, three activities, six publications, and academic links. Manual browser interaction test for the language toggle remains open.
-- [ ] Run a fixture-based test of document-index generation with metadata containing conflicting reserved keys.
-- [ ] Konfirmasi pemilik atas ORCID, jabatan fungsional, pendidikan, serta isi biodata.
-- [ ] Konfirmasi foto publik dan arahan penghapusan gelas/tas.
-- [ ] Tambahkan pengalaman mengajar, mata kuliah, hibah, pembimbingan, penghargaan jika ada bukti.
-- [ ] Implementasi animasi scroll dan WebGL sesuai roadmap.
-- [ ] QA visual di desktop/mobile dan pemeriksaan aksesibilitas/performa.
-
-## Perbaikan teknis v0.2.3
-- Run #47 mengungkap error `TS2339: Property 'env' does not exist on type 'ImportMeta'` di `src/App.tsx`.
-- Menambahkan `src/vite-env.d.ts` dengan referensi `vite/client`.
-- Perbaikan tervalidasi oleh run #52 yang completed dengan conclusion success.
+- [ ] Verifikasi CI dan live deployment untuk commit panduan v0.2.9.
+- [ ] Uji satu dokumen nyata yang disetujui: metadata, URL, dan kartu website.
+- [ ] Konfirmasi biodata, jabatan fungsional, pendidikan, dan tautan ORCID kepada pemilik.
+- [ ] Finalisasi foto asli tanpa mengubah wajah/piksel identitas; gelas dan tas dikecualikan.
+- [ ] Lengkapi pengalaman mengajar, hibah, pembimbingan, dan penghargaan jika ada bukti.
+- [ ] Implementasi motion/WebGL dan QA desktop/mobile.
 
 ## Deployment
-- Workflow: [GitHub Actions run #82](https://github.com/19am-lannnmmmm/df-sabiku/actions/runs/41007919427)
-- Status run: completed / success.
-- Live page checked with a fresh scrape; updated v0.2.8 documentation copy is present.
-- Live URL: https://19am-lannnmmmm.github.io/df-sabiku/
+- Run #84: https://github.com/19am-lannnmmmm/df-sabiku/actions/runs/41008411810 — success pada commit `c41015c`.
+- Commit panduan dokumen ini memerlukan workflow sendiri sebelum dinyatakan ter-deploy.
 
-## Temuan akademik (snapshot 2026-10-30)
-- Google Scholar: 8 artikel, 3 sitasi, h-index 1, i10-index 0 (snapshot saat akses).
-- SINTA ID 6935628: Score Overall 46; Score 3Yr 45.
-- Enam artikel memiliki dukungan metadata publisher/DOI yang menyebut nama lengkap dan afiliasi yang sama.
-- SIPORA author browse menampilkan satu item sementara Google Scholar menampilkan delapan rekam; perbedaan cakupan indeks tidak disamakan menjadi total publikasi.
-
-Rincian sumber dan batas verifikasi: `docs/RESEARCH_SOURCES.md`. Draft konten: `docs/PORTFOLIO_CONTENT_DRAFT.md`.
-
-## Aturan kelanjutan
-Setiap sesi wajib memperbarui status, changelog, worklog, dan issue relevan. Jangan klaim build/deployment berhasil tanpa hasil pipeline yang sukses.
+## Aturan
+Jangan klaim build/deployment berhasil tanpa hasil pipeline sukses. Perbarui status, changelog, worklog, dan roadmap pada setiap sesi.

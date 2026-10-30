@@ -1,68 +1,27 @@
-## [0.2.8] — 2026-10-30
-### Fixed
-- Documentation section introduction no longer says archive content will appear later while entries are already displayed.
-- Metadata sidecars can no longer override generated document ID, category, type, or URL fields.
-- GitHub Actions run #82 completed successfully; live page scrape confirms the updated copy is deployed.
-
-## [0.2.7] — 2026-10-30
-### Improved
-- Added English translations for activity titles, locations, roles, and summaries.
-- Added English publication categories and summaries; original publication titles, journal names, and author names remain in their published form.
-- Localized education program labels, research-interest labels, and publication page notation in English mode.
-- Deployment verification pending.
-
 # Changelog — DF Sabiku Portfolio
 
+## [0.2.9] — 2026-10-30
+### Added
+- Panduan unggah dokumen pada `public/documents/README.md`, termasuk kategori, format, metadata sidecar, privasi, dan langkah publikasi.
+- Template metadata reusable pada `docs/templates/document.meta.json.example`.
+### Tested
+- Fixture test generator lolos di GitHub Actions run #84 pada commit `c41015c`.
+- Commit dokumentasi ini masih memerlukan verifikasi workflow tersendiri.
+
+## [0.2.8] — 2026-10-30
+- Intro dokumentasi diperbarui; metadata sidecar tidak dapat menimpa ID, kategori, tipe, atau URL.
+- GitHub Actions run #82 sukses dan live page telah diperiksa.
+
+## [0.2.7] — 2026-10-30
+- Menambahkan terjemahan Inggris untuk ringkasan kegiatan/publikasi tanpa mengubah judul ilmiah, nama jurnal, dan penulis.
+- Run #76 sukses.
+
 ## [0.2.6] — 2026-10-30
-### Fixed
-- Documentation archive no longer shows an empty-state card when activity entries or uploaded documents are already available.
-- Empty-state guidance is now localized for Indonesian and English modes.
-
-
+- Memperbaiki empty state arsip agar tidak muncul ketika data kegiatan atau dokumen tersedia.
 
 ## [0.2.5] — 2026-10-30
-### Fixed
-- Removed the empty `mailto:` action, which had no recipient and could not contact the profile owner.
-- Replaced it with the existing Google Scholar, SINTA, ORCID, and SIPORA profile links; added responsive link layout.
-### Media status
-- User confirmed the cup and pink handbag should be excluded from the hero portrait composition.
-- Automated GrabCut experiments still leave staircase fragments and damage edge details; no draft cutout has been committed or deployed. Preserve the original face and pixels; obtain a cleaner segmentation before integration.
+- Mengganti tautan email kosong dengan tautan akademik yang tersedia.
+- Cutout foto belum layak; eksperimen masih menyisakan fragmen tangga dan tidak dipublikasikan.
 
-
-
-## [0.2.4] — 2026-10-30
-Status: **GitHub Actions and GitHub Pages deployment successful**
-
-### Verified
-- GitHub Actions run #52 completed with conclusion `success`.
-- The workflow completed after adding the Vite environment type declaration.
-- Live deployment target: https://19am-lannnmmmm.github.io/df-sabiku/
-
-## [0.2.3] — 2026-10-30
-Status: **Fixed and validated by run #52**
-
-### Fixed
-- Added `src/vite-env.d.ts` referencing `vite/client`; this resolves the observed TypeScript error for `import.meta.env.BASE_URL`.
-- Run #47 exposed the missing declaration; run #52 subsequently completed successfully.
-
-## [0.2.2] — 2026-10-30
-### Fixed
-- Removed `setup-node` npm cache configuration because the repository has no lockfile yet; dependency installation continues with `npm install`.
-
-## [0.2.1] — 2026-10-30
-### Added
-- Added `public/data/publications.json` with six publisher-checked publication records.
-- Added `public/data/activities.json` with three official Polije outreach/news records.
-- Updated the React app to fetch and render publication and activity cards from JSON.
-- Added responsive card styles for publication and activity sections.
-- Added academic profile links to `src/data/profile.json`, including ORCID 0009-0009-9278-1855.
-- Routine publication/activity additions or removals are JSON-only changes; UI components do not need editing.
-- Documents remain folder-based with optional adjacent `.meta.json` metadata. No admin/CMS interface exists.
-
-## [0.2.0] — 2026-10-30
-- Initial academic research discovery and evidence log.
-- Matched Google Scholar and SINTA profiles and recorded official Polije activity sources.
-- Added bilingual portfolio content draft and project tracking updates.
-
-## [0.1.0] — 2026-10-30
-- React/Vite/TypeScript scaffold, initial bilingual portfolio UI, profile JSON, document folders, metadata index generator, GitHub Pages workflow and README.
+## Foundation v0.1.0–v0.2.4
+- Scaffold React/Vite/TypeScript, bilingual UI, data JSON, metadata generator, dan workflow GitHub Pages; run #52 sukses.

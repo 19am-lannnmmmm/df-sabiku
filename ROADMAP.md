@@ -1,63 +1,26 @@
-## Progress v0.2.8
-- Updated documentation section copy so it describes the existing activity archive instead of implying content is still forthcoming.
-- Hardened document-index generation: sidecar metadata is applied first, then canonical ID, category, type, and URL fields are assigned by the generator and cannot be overwritten.
-- GitHub Actions run #82 succeeded; live page verified with fresh scrape.
-
 # Roadmap — DF Sabiku
 
-Dokumen ini adalah peta kerja utama. Status hanya diubah setelah pekerjaan benar-benar dilakukan dan diverifikasi.
+| Versi | Tahap | Status |
+|---|---|---|
+| v0.1.0 | Foundation React/Vite/TS, bilingual, JSON, Pages | Selesai |
+| v0.2.x | Verifikasi, konten akademik, bilingual, metadata | Fondasi selesai; audit dokumen berlanjut |
+| v0.3.0 | Pengayaan riset, teaching, community service | Data awal ada; perlu konfirmasi pemilik |
+| v0.4.0 | Cutout foto asli | Menunggu hasil bersih dan persetujuan |
+| v0.5.0 | Motion foundation dan reduced motion | Planned |
+| v0.6.0 | WebGL hero dan partikel benih | Planned |
+| v0.7.0 | Scroll narrative pertumbuhan tanaman | Planned |
+| v0.8.0 | Integrasi arsip, galeri, CV, kontak final | Struktur arsip siap; file nyata belum ada |
+| v1.0.0 | QA, aksesibilitas, performa, SEO, release | Planned |
 
-| Versi | Tahap | Cakupan | Status |
-|---|---|---|---|
-| v0.1.0 | Foundation | React/Vite/TS, layout dasar, bilingual, JSON profil, folder dokumen, workflow Pages | **Selesai** |
-| v0.2.0 | Verification & content model | Build test, deploy test, metadata schema, konten awal terverifikasi | **Selesai untuk build/deploy awal**; audit konten/dokumen berlanjut |
-| v0.3.0 | Academic research | Profil institusi, Scholar/SINTA/ORCID, publikasi, penelitian, teaching, community service | Riset awal dan data awal tersedia; perlu konfirmasi biodata dan pengayaan konten |
-| v0.4.0 | Profile media | Cutout foto, optimasi PNG/WebP, fallback dan aksesibilitas | Menunggu konfirmasi foto dan izin penggunaan |
-| v0.5.0 | Motion foundation | GSAP/ScrollTrigger atau Framer Motion (pilih satu), reduced motion, responsive polish | Planned |
-| v0.6.0 | WebGL hero | Three.js/R3F, partikel benih, interaksi pointer, fallback statis | Planned |
-| v0.7.0 | Scroll narrative | Imbibisi → radikula → plumula → bibit; kartu riset dan publikasi | Planned |
-| v0.8.0 | Content integration | Arsip PDF/gambar, galeri, CV, academic IDs, kontak final | Planned |
-| v1.0.0 | Release | QA desktop/mobile, aksesibilitas, performa, SEO, deployment stabil | Planned |
-
-## Progress v0.2.7
-- Added English display fields for activities and publication summaries/categories while preserving original scholarly titles, journal names, and author names.
-- Localized activity cards, publication metadata labels, education program names, and research-interest labels.
-- Deployment verification pending.
-
-## Progress v0.2.6
-- Fixed misleading empty archive placeholder: it now appears only when both activity and document lists are empty.
-- Localized archive upload guidance for English mode.
-- Deployment verification pending.
-
-## Progress v0.2.5 — contact and media audit
-- Removed the empty email link and surfaced existing academic profile links instead.
-- Confirmed cup and pink handbag are to be excluded from the portrait composition.
-- Automated cutout tests are not production-ready because staircase remnants remain; hero photo integration remains pending.
-
-## Progress v0.2.4 — deployment verified
-- GitHub Actions run #52 (commit `7ca77c5`) completed successfully.
-- Initial GitHub Pages deployment pipeline is now green.
-- Live URL: https://19am-lannnmmmm.github.io/df-sabiku/
-
-## Progress v0.2.3 — TypeScript fix
-- Added `src/vite-env.d.ts` with `/// <reference types="vite/client" />`.
-- The change resolved the TypeScript `ImportMeta.env` type issue; validated by successful run #52.
-
-## Progress v0.2.2 — workflow compatibility
-- Removed npm cache configuration from `setup-node` because the repository had no lockfile.
-
-## Progress v0.2.1 — data-driven content
-- Publications: `public/data/publications.json`.
-- Activities: `public/data/activities.json`.
-- Academic profile: `src/data/profile.json`.
-- Documents: `public/documents/{research,publications,community,teaching,other}/`, with adjacent `.meta.json` files.
+## Progress v0.2.9
+- Menambahkan panduan upload pada `public/documents/README.md` dan template metadata.
+- Run #84 membuktikan fixture test generator sukses; commit dokumentasi ini masih menunggu CI.
+- Uji dokumen nyata dan tampilan live tetap menjadi pekerjaan berikutnya.
 
 ## Prioritas berikutnya
-1. Konfirmasi foto profil final dan izin penggunaannya; tentukan apakah gelas/tas ikut dihapus dari cutout.
-2. Audit tampilan live pada desktop dan mobile, termasuk navigasi, bilingual, tautan, dan email kontak.
-3. Audit schema metadata dan alur penambahan dokumen PDF/gambar dari folder sampai tampil di website.
-4. Lengkapi konten teaching, penelitian, dan kegiatan hanya berdasarkan sumber/bukti yang tersedia.
-5. Implementasikan motion foundation, lalu WebGL hero dan scroll narrative secara bertahap.
-
-## Definition of done
-Setiap versi harus memiliki ringkasan perubahan, daftar file/fitur, cara uji, hasil uji, known issues, dan commit SHA. Jangan tandai selesai hanya karena kode sudah ditulis.
+1. Verifikasi CI dan live Pages setelah commit panduan.
+2. Uji satu dokumen nyata yang telah disetujui.
+3. Konfirmasi biodata dan data akademik.
+4. Finalisasi cutout foto asli dengan gelas/tas dihilangkan.
+5. Audit UI desktop/mobile, bilingual, aksesibilitas, dan performa.
+6. Implementasikan motion, WebGL, lalu scroll narrative bertahap.
